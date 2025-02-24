@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFEST - WDC</title>
 
-    <!-- Import Tailwind -->
-    <link rel="stylesheet" href="css/tailwind.css">
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="m-0 p-0">
     <!-- Header -->
