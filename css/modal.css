@@ -5,11 +5,61 @@
     z-index: 5;
 }
 
+/* font */
 .markazi-text-beranda {
     font-family: "Markazi Text", serif;
     font-optical-sizing: auto;
     font-weight: 550;
     font-style: normal;
 }
-  
+
+body {
+    background-color: #FBF8E9;
+}
+
+/* wave shape */
+.custom-shape-divider-bottom-1740641441 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1740641441 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 243px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1740641441 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1740641441 svg {
+        width: calc(300% + 1.3px);
+        height: 85px;
+    }
+}
+/* ^^ wave shape ^^ */ 
+
+/* other wave shape */
+.transition {
+    aspect-ratio: 500/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1 {
+    background-image: url(/public/wave-haikei2.svg);
+}
+
+/* other wave shape */
   
