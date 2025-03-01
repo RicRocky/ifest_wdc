@@ -1,0 +1,38 @@
+/* Font The Nautigal */
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+
+/* Font Markazi */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+/* Font PT Sans Narrow */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+:root{
+    /* Font */ /* F = Font*/
+    --f-judul: "The Nautigal";      
+    --f1: "Markazi Text";
+    --f2: "PT Sans Narrow";
+    /* Font */
+
+    /* Background Color */ /* p = primary */ /* s = secondary */ /* t = tersier */
+    --p1: #EADCA6;
+    --s1: #F8F3D9;
+    --s3: #F3EBBE;
+    --s6: #C2A824;
+    --t1: #BC360E;
+    --black: #000000;
+    --white: #ffffff;
+    /* Background Color */
+}
+
+.c-f-judul{
+    font-family: var(--f-judul);
+}
+
+.c-f1{
+    font-family: var(--f1);
+}
+
+.c-f2{
+    font-family: var(--f2);
+}
