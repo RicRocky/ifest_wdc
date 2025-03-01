@@ -14,7 +14,7 @@
     <!-- Import Carousel -->
     <link rel="stylesheet" href="css/carousel.css">
 </head>
-<body class="m-0 p-0 relative">
+<body class="m-0 p-0 relative bg-[var(--p2)] overflow-x-hidden">
     <!-- Header -->
     <header class="px-3 grid grid-cols-3 bg-[var(--p1)]">
         <div class="flex">
@@ -50,7 +50,7 @@
         </div>    
     </div>
 
-    <div class="mx-10 my-4 grid grid-cols-9">
+    <div class="mx-10 my-4 grid grid-cols-9 c-f1 ">
         <div class="grid place-content-center">
             <div class="w-[5.4vw] h-[5.4vw] rounded-[50%] bg-[var(--black)]"></div>
             <p class="text-center">Promo</p>
@@ -90,23 +90,630 @@
     </div>
 
     <div class="p-4 bg-[var(--s3)]">
-        <div class="flex relative items-center">
-            <img src="public/cart.png" alt="Troli" class="h-[1.5vw] mr-3">
-            <p class="text-[var(--t1)] c-f1 text-3xl"><b>F ASH</b> Sale</p>
-            <img src="public/flash-sale.png" alt="L" class="w-[0.5%] text-[var(--t1)] absolute top-[7px] left-[3.35%]">  <!-- Tidak responsive -->
-            <h5 class="c-f1 ml-2 px-2 font-bold text-xl bg-[var(--s6)]">02:30:29</h5>
+        <div class="flex items-center justify-end">
+            <div class="w-[50%] flex items-center">
+                <img src="public/cart.png" alt="Troli" class="h-[1.5vw] mr-3">
+                <img src="public/flash-sale.png" alt="FLASH Sale" class="w-[10vw] text-[var(--t1)] top-[7px] left-[3.35%]">  <!-- Tidak responsive -->
+                <h5 class="c-f1 ml-2 px-2 font-bold text-xl bg-[var(--s6)] rounded-xs">02 : 30 : 29</h5>
+            </div>
+            <div class="w-[50%] grid place-content-end">
+                <a href="toko/flash_sale.html">
+                    <div class="w-[2vw] h-[2vw] rounded-full bg-[var(--p2)] flex justify-center">
+                        <div class="pl-1 w-[60%] grid place-content-center">
+                            <img src="public/icon-panah.png" class="w-[80%] ">
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="overflow-auto flex">
-            <div>
-                <div class="w-lg h-lg bg-[var(--black)]"></div>
-                <div class="flex">
-                    <p class="mr-3">Rp20.000</p>
-                    <h5 class="c-f1 m-0 pt-0 pb-0 px-2 font-bold text-xs bg-[var(--s6)]">Diskon 70%</h5>
-                </div>
+        <div class="ml-4 overflow-auto flex">
 
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
             </div>
 
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+
+            <div class="mt-2 mr-2">
+                <div class="h-[150px] w-[150px] bg-[var(--black)]"></div>
+                <div class="mt-1 flex items-center relative">
+                    <p class="mr-1 text-[10px]">Rp20.000</p>
+                    <div class="rotate-[3rad] w-[28%] h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                    <div class="ml-1 relative">
+                        <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                        <img src="public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                    </div>
+                </div>
+                <div class="c-f1 flex items-end justify-between font-semibold">
+                    <div class="flex items-end relative">
+                        <p class="p-0 m-0">Rp</p>
+                        <p class="p-0 m-0 text-2xl">7.000</p>
+                    </div>
+                    <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+                </div>
+            </div>
+            
         </div>
+    </div>
+
+    <div class="p-4 flex justify-center flex-wrap">
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+
+        <div class="w-[14vw] mt-2 mr-2">
+            <div class="h-[14vw] w-full bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-lg  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <p class="p-0 m-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+                <button class="mb-1 w-[40%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--s6)] rounded-xs">Beli</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-7 mt-5 grid place-content-center">
+        <button class="c-f1 text-2xl font-semibold rounded-lg p-2 w-[25vw] bg-[var(--p1)]">Lihat Lainnya</button>
     </div>
 
     <!-- Content -->
@@ -188,7 +795,7 @@
                 <p class="c-f1 w-64">“Setiap pakaian punya cerita. Pilihlah cerita yang ramah lingkungan"</p>
             </div>
         </div>
-        <div class="w-full grid place-content-center opacity-70">
+        <div class="w-full grid place-content-center opacity-80">
             <h1 class="c-f1">Copyright@2025 | Ricky Cahyadi, Aileen Averina, Hans Aristo</h1>
         </div>
     </footer>
