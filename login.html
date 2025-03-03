@@ -34,14 +34,19 @@
         
                 <div class="mb-4">
                     <p>Kata Sandi</p>
-                    <input type="password" name="" id="" placeholder="Masukan Kata Sandi" class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]">
+                    <div class="flex items-center">
+                        <input type="password" name="" id="" placeholder="Masukan Kata Sandi" class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]">
+                        <img src="public/icon-mata-tutup.png" alt="" class="w-[6%] h-[6%] -ml-10 relative z-1">
+                    </div>
                 </div>
 
                 <div class="text-[70%] -mt-3 flex justify-end">
                     <button><u>Lupa Kata Sandi ?</u></button>
                 </div>
 
-                <p class="text-center text-[70%] text-gray-500">Belum Punya Akun ? <span class="text-[var(--t4)]"><u>Daftar</u></span></p>
+                <p class="text-center text-[70%] text-gray-500">Belum Punya Akun ? <span class="text-[var(--t4)]">
+                    <a href=" "><u>Daftar</u></a>
+                </span></p>
 
                 <button class="w-full py-2 bg-[var(--p8)] text-white rounded-xl drop-shadow-lg">Masuk</button>
         
@@ -55,7 +60,12 @@
                     <div class="bg-black w-100% h-[2%]"></div>
                 </div>
                 
-                <button class="w-full py-2 bg-[var(--s3)] rounded-xl drop-shadow-lg">Masuk dengan Google</button>
+                
+                <button class="w-full py-2 bg-[var(--s3)] rounded-xl drop-shadow-lg flex justify-center items-center">
+                    <img src="public/icon-google.png" alt="" class="w-[6%] h-[6%] mr-3">
+                    Masuk dengan Google
+                </button>
+                
            </div>
 
             <div class="w-full h-full mt-[30%] py-2 px-3 flex items-center justify-between bg-[var(--s3)] rounded-lg drop-shadow-lg">
