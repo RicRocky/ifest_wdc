@@ -3,9 +3,947 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>IFEST - WDC</title>
     
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Import VI -->
+    <link rel="stylesheet" href="../css/vi.css">
+    
+    <!-- Import Carousel -->
+    <link rel="stylesheet" href="css/carousel.css">
+
+</head>
+<body class="m-0 p-0 relative bg-[var(--p2)] overflow-x-hidden">
+    <!-- Header -->
+    <header class="px-3 grid grid-cols-3 bg-[var(--p1)]">
+        <div class="flex">
+            <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../beranda.html" class="c-f1 px-3 text-xl ">Beranda</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../toko.html" class="c-f1 px-3 text-xl ">Toko</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../edukasi.html" class="c-f1 px-3 text-xl ">Edukasi</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../donasi.html" class="c-f1 px-3 text-xl ">Donasi</a>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <a href="beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl">Arunika</a>
+        </div>
+        <div class="flex items-center justify-end">
+            <img src="../public/cart.png" class="mr-6 h-[1.5vw]">
+            <img src="../public/profile.png" class="mr-6 h-[1.5vw]">
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Content -->
+    <div class="w-screen h-[6vh] bg-[var(--black)] flex items-center overflow-x-hidden">
+        <img src="../public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 w-[2%]">
+        <div class="pb-1 relative grid place-content-center">
+            <input type="text" class="c-f2 w-[35vw] bg-[var(--black)] outline-[0] text-white" placeholder="Cari Baju, Aksesoris dan barang-barang menarik lainnya">
+            <div class="w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"></div>
+        </div>    
+    </div>
+    
+    <div class="flex items-center justify-end m-3">
+        <div class="w-[100%] flex items-center">
+            <img src="../public/cart.png" alt="Troli" class="h-[3vw] mr-3">
+            <img src="../public/flash-sale.png" alt="FLASH Sale" class="w-[15vw] text-[var(--t1)] top-[7px] left-[3.35%]">  <!-- Tidak responsive -->
+            <h5 class="c-f1 ml-2 px-2 font-bold text-3xl bg-[var(--s6)] rounded-xs">02 : 30 : 29</h5>
+        </div>
+    </div>
+
+    <div class="px-5 justify-center flex c-f1 flex-wrap">
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        <div class="my-3 mr-5">
+            <div class="h-[150px] w-[150px] bg-[var(--black)] rounded-sm"></div>
+            <div class="mt-1 flex items-center relative">
+                <div class="relative">
+                    <p class="mr-1 text-[15px]">Rp20.000</p>
+                    <div class="top-3 rotate-[3rad] w-full h-[1px] absolute bg-[#ff0000] bot-px absolute"></div>
+                </div>
+                <div class="ml-1 relative">
+                    <h5 class="c-f1 m-0 py-0 px-1 font-bold text-[10px] bg-[var(--t2)] rounded-xs relative z-[2]">Diskon 70%</h5>
+                    <img src="../public/thunder.png" class="w-[17%] left-[-0.3rem] top-[-6px] z-[10] absolute">  <!-- Tidak responsive -->
+                </div>
+            </div>
+            <div class="c-f1 flex items-end justify-between font-semibold">
+                <div class="flex items-end relative">
+                    <p class="p-0 m-0">Rp</p>
+                    <p class="p-0 m-0 text-2xl">7.000</p>
+                </div>
+                <button class="mb-1 w-[50%] p-[1px] font-light text-[var(--white)] text-xs bg-[var(--p8)] rounded-sm">Beli</button>
+            </div>
+        </div>
+        
+        
+        
+    </div>
 </body>
 </html>
