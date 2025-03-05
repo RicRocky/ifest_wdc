@@ -17,18 +17,23 @@
     /* Background Color */ /* p = primary */ /* s = secondary */ /* t = tersier */
     --p1: #EADCA6;
     --p2: #FAF7EA;
+    --p4: #E7D698;
     --p8: #675718;
     --s1: #F8F3D9;
     --s2: #FBF8E9;
     --s3: #F3EBBE;
     --s4: #EBDD93;
     --s6: #C2A824;
+    --s7: #97831C;
     --t1: #BC360E;
     --t2: rgba(255, 0 ,0, 0.56);
     --t3: #C62005;
+    --t4: #2451A4;
+    --t5: #FFFBE6;
+    --t6: #2C2C2C;
+    --t7: #14AE5C;
     --black: #000000;
     --white: #ffffff;
-    --t4: #2451A4;
     /* Background Color */
 }
 

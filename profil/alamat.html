@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Import VI -->
+    <link rel="stylesheet" href="../css/vi.css">
+
+    <style>
+        :root{
+            --garis: rgba(0, 0, 0, 0.2);
+            --default: #E0E0E0;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 relative">
+    <!-- Header -->
+    <header class="c-f1  px-3 grid grid-cols-3 bg-[var(--p1)]">
+        <div class="flex markazi-text-beranda">
+            <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../beranda.html" class="px-3 text-xl ">Beranda</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../toko.html" class="px-3 text-xl ">Toko</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../edukasi.html" class="px-3 text-xl ">Edukasi</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../donasi.html" class="px-3 text-xl ">Donasi</a>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <a href="../beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl">Arunika</a>
+        </div>
+        <div class="flex items-center justify-end">
+            <button class="h-full mx-4 "><a href=""><img src="../public/cart.png" class="h-7"></a></button>
+            <button class="h-full mx-4 "><a href="../login.html"><img src="../public/profile.png" class="h-8 "></a></button>
+
+        </div>
+    </header>
+    <!-- Header -->
+    
+    <!-- Konten -->
+    <div class="c-f1 my-3 flex">
+        <div class="w-[20vw] h-[90vh] py-3 bg-[var(--t5)] rounded-br-md rounded-tr-md drop-shadow-md grid gap-0 grid-cols-1 place-content-between">
+            <div class="w-full h-auto">
+                <div class="pl-5 mb-2 flex items-center">
+                    <div class="bg-black w-[5%] h-[30px]"></div>
+                    <h1 class="ml-2 font-bold text-xl">Ricky Aileen Hans</h1>
+                </div>
+                <div class="my-2 bg-[var(--garis)] w-full h-[1px]"></div>
+                <div class="pl-5">
+                    <h1 class="font-bold text-xl">Transaksi</h1>
+                    <div class="mt-1 mb-2 flex items-center">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <a class="ml-2 font-bold text-lg" href="status_transaksi.html">Status Transaksi</a>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="mb-2 bg-black w-[5%] h-[30px]"></div>
+                        <a class="ml-2 font-bold text-lg" href="histori_transaksi.html">Histori</a>
+                    </div>
+                </div>
+                <div class="my-2 bg-[var(--garis)] w-[100%] h-[1px]"></div>
+                <div class="pl-5">
+                    <h1 class="font-bold text-xl">Pengaturan Akun</h1>
+                    <div class="mt-1 mb-2 flex items-center">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <a class="ml-2 font-bold text-lg" href="biodata.html">Biodata</a>
+                    </div>
+                    <div class="mb-2 flex items-center">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <a class="ml-2 font-bold text-lg" href="alamat.html">Alamat</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <div class="ml-5 flex items-center">
+                    <img src="../public/keluar.png" class="h-[30px]">
+                    <a class="ml-2 font-bold text-lg text-[var(--t3)]" href="alamat.html">Keluar</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md">
+            <div class="m-3 p-3 rounded-md drop-shadow-md flex items-center justify-between bg-[var(--s1)]">
+                <h1 class="mt-1 font-bold text-2xl">Histori Transaksi</h1>
+            </div>
+            
+            <div class="ml-6">
+                <div class="flex">
+                    <div class="w-[75%]">
+                        <div class="flex">
+                            <div class="flex items-center">
+                                <h1 class="font-bold text-2xl mr-5">Kos Baru</h1>
+                                <div class="bg-[var(--t6)] rounded-lg">
+                                    <h1 class="px-7 text-white text-sm">Utama</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xl c-f2">Jalan Rungkut Mejoyo Selatan VI Blok W No 57, Kali Rungkut, Rungkut, Surabaya, Jawa Timur, Indonesia</p>
+                    </div>
+                    <div class="bg-black h-[4rem] w-[1px]"></div>
+                    <div class="px-5 grid grid-cols-1 place-content-center w-[25%] font-semibold">
+                        <button class="bg-[var(--p4)] rounded-md">Edit</button>
+                        <button class="mt-2 bg-[--default] rounded-md text-lg">Jadikan Utama</button>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <!-- Konten -->
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Import VI -->
+    <link rel="stylesheet" href="../css/vi.css">
+
+    <style>
+        :root{
+            --garis: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 relative">
+    <!-- Header -->
+    <header class="px-3 grid grid-cols-3 bg-[var(--p1)]">
+        <div class="flex markazi-text-beranda">
+            <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../beranda.html" class="c-f1 px-3 text-xl ">Beranda</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../toko.html" class="c-f1 px-3 text-xl ">Toko</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../edukasi.html" class="c-f1 px-3 text-xl ">Edukasi</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="../donasi.html" class="c-f1 px-3 text-xl ">Donasi</a>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <a href="../beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl">Arunika</a>
+        </div>
+        <div class="flex items-center justify-end">
+            <button class="h-full mx-4 "><a href=""><img src="../public/cart.png" class="h-7"></a></button>
+            <button class="h-full mx-4 "><a href="../login.html"><img src="../public/profile.png" class="h-8 "></a></button>
+
+        </div>
+    </header>
+    <!-- Header -->
+    
+    <!-- Konten -->
+    <div class="my-3 flex">
+        <div class="w-[20vw] h-[90vh] py-3 bg-[var(--t5)] rounded-br-md rounded-tr-md drop-shadow-md grid gap-0 grid-cols-1 place-content-between">
+            <div class="w-full h-auto">
+                <div class="pl-5 mb-2 flex items-center">
+                    <div class="bg-black w-[5%] h-[30px]"></div>
+                    <h1 class="c-f1 ml-2 font-bold text-xl">Ricky Aileen Hans</h1>
+                </div>
+                <div class="my-2 bg-[var(--garis)] w-full h-[1px]"></div>
+                <div class="pl-5">
+                    <h1 class="c-f1 font-bold text-xl">Transaksi</h1>
+                    <div class="mt-1 mb-2 flex items-center">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <a class="c-f1 ml-2 font-bold text-lg" href="status_transaksi.html">Status Transaksi</a>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="mb-2 bg-black w-[5%] h-[30px]"></div>
+                        <a class="c-f1 ml-2 font-bold text-lg" href="histori_transaksi.html">Histori</a>
+                    </div>
+                </div>
+                <div class="my-2 bg-[var(--garis)] w-[100%] h-[1px]"></div>
+                <div class="pl-5">
+                    <h1 class="c-f1 font-bold text-xl">Pengaturan Akun</h1>
+                    <div class="mt-1 mb-2 flex items-center">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <a class="c-f1 ml-2 font-bold text-lg" href="biodata.html">Biodata</a>
+                    </div>
+                    <div class="mb-2 flex items-center">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <a class="c-f1 ml-2 font-bold text-lg" href="alamat.html">Alamat</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <div class="ml-5 flex items-center">
+                    <img src="../public/keluar.png" class="h-[30px]">
+                    <a class="c-f1 ml-2 font-bold text-lg text-[var(--t3)]" href="alamat.html">Keluar</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md">
+            <div class="m-3 p-3 rounded-md drop-shadow-md flex items-center justify-between bg-[var(--s1)]">
+                <h1 class="c-f1 mt-1 font-bold text-2xl">Biodata Akun</h1>
+                <div class="flex items-center w-[25vw] justify-end">
+                    <div class="bg-black w-[5%] h-[30px]"></div>
+                    <h1 class="ml-2 c-f1 font-bold text-2xl">100 Koin</h1>
+                </div>
+            </div>
+
+            <div class="c-f1 mx-auto w-[70vw] text-xl font-semibold ">
+                <div class="ml-3">
+                    <div class="mb-2 flex items-center">
+                        <p class="w-[20%]">Username</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">Ricky Aileen Hans</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold" id="Username" onclick="">Ubah</h1>
+                        </div>
+                    </div>
+                    <div class="mb-2 flex items-center">
+                        <p class="w-[20%]">Tanggal Lahir</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">-</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold ">Ubah</h1>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="w-[20%]">Jenis Kelamin</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">-</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold ">Ubah</h1>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="mt-[5%] text-2xl font-extrabold">Kontak</h1>
+                
+                <div class="ml-3">
+                    <div class="mb-2 flex items-center">
+                        <p class="w-[20%]">Email</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">rickyaileenhansifest@gmail.com</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold ">Ubah</h1>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="w-[20%]">Nomor Handphone</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">-</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold ">Ubah</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten -->
+
+</body>
+
+</html>
