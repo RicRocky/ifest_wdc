@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFEST - WDC</title>
+
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Import VI -->
+    <link rel="stylesheet" href="css/vi.css">
+
+    <style>
+        .line-clamp {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+        }
+    </style>
+
+</head>
+
+<body class="m-0 p-0 relative bg-[var(--s2)] overflow-x-hidden">
+    <!-- Header -->
+    <header class="px-3 grid grid-cols-3 bg-[var(--p1)]">
+        <div class="flex">
+            <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="beranda.html" class="c-f1 px-3 text-xl ">Beranda</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="toko.html" class="c-f1 px-3 text-xl ">Toko</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="edukasi.html" class="c-f1 px-3 text-xl ">Edukasi</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="donasi.html" class="c-f1 px-3 text-xl ">Donasi</a>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <a href="beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl">Arunika</a>
+        </div>
+        <div class="flex items-center justify-end">
+            <img src="public/cart.png" class="mr-6 h-[1.5vw]">
+            <img src="public/profile.png" class="mr-6 h-[1.5vw]">
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Content -->
+    <div class="w-screen h-[6vh] bg-[var(--black)] flex items-center overflow-x-hidden">
+        <img src="public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 w-[2%]">
+        <div class="pb-1 relative grid place-content-center">
+            <input type="text" class="c-f2 w-[35vw] bg-[var(--black)] outline-[0] text-white"
+                placeholder="Cari Barang di Keranjang Anda">
+            <div class="w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"></div>
+        </div>
+
+    </div>
+
+    <!-- Judul -->
+    <div class="flex my-2 ml-4">
+        <img class="w-[4vw]" src="public/merah_cart.png" alt="keranjang">
+        <h1 class="c-f1 text-[3vw] grid place-content-center font-bold">Keranjang Anda</h1>
+    </div>
+    <!-- Judul -->
+
+    <!-- Header Keranjang -->
+    <div class="grid grid-cols-7 h-[4vw] bg-[var(--p4)]">
+        <div class="flex items-center">
+            <input class="w-[50%] h-[50%]" type="checkbox" name="" id="">
+            <h1 class="c-f1 text-[2vw] grid place-content-center">Produk</h1>
+        </div>
+        <div class="col-start-5 place-content-center">
+            <h1 class="c-f1 text-[2vw] grid place-content-center">Jumlah</h1>
+        </div>
+        <div class="col-start-6 place-content-center">
+            <h1 class="c-f1 text-[2vw] grid place-content-center">Harga</h1>
+        </div>
+        <div class="col-start-7 place-content-center">
+            <h1 class="c-f1 text-[2vw] grid place-content-center">Aksi</h1>
+        </div>
+    </div>
+    <!-- Header keranjang -->
+
+    <!-- Keranjang -->
+    <div class="h-[1.5vw]"></div>
+    <div class="grid grid-cols-7 h-[15vw] bg-white">
+        <div class="flex w-[50vw] col-span-2">
+            <input class="w-[14%] h-[14%] mt-3" type="checkbox" name="" id="">
+            <div class="flex items-center">
+                <div class="mx-6 w-[150px] h-[150px] bg-black"></div>
+            </div>
+        </div>
+        <div class="col-span-2 w-[90%] py-4 ml-[-2vw]">
+            <div>
+                <p class="c-f2 text-[1.7vw] w-full line-clamp">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage
+                    Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            </div>
+            <div class="flex">
+                <p
+                    class="c-f1 font-bold mr-2 mt-5 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-[1.3vw]">
+                    Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-5 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-[1.3vw]">Terjamin</p>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <div class="flex items-center">
+                <div class="w-[2.5vw] h-[2.5vw] bg-black rounded-[50%] flex items-center justify-center">
+                    <img class="w-[80%]" src="public/Kurang.png" alt="">
+                </div>
+                <p class="mx-4 c-f1 text-[3.5vw]">1</p>
+                <div class="w-[2.5vw] h-[2.5vw] bg-[var(--n5)] rounded-[50%] flex items-center justify-center">
+                    <img class="w-[80%]" src="public/Tambah.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <h1 class="c-f1 text-[3vw] text-[var(--t8)] grid place-content-center">Rp40.000</h1>
+        </div>
+        <div class="grid place-content-center">
+            <img class="w-[4vw]" src="public/icon-Trash.png" alt="">
+        </div>
+    </div>
+
+    <div class="h-[0.8vw]"></div>
+    <div class="h-[6vw] bg-white flex items-center">
+        <img class="w-[4vw] h-[4vw] m-5" src="public/icon-truck.png" alt="">
+        <div class="ml-5">
+            <p class="c-f2 text-[var(--n5)] text-[1.6vw]">Gratis Ongkir s/d Rp40.000 dengan min. belanja Rp0; Gratis Ongkir s/d Rp300.000 dengan min. belanja Rp100.000</p>
+            <p class="c-f2 text-[var(--t8)] text-[1.4vw]">Pelajari lebih lanjut</p>
+        </div>
+    </div>
+
+    <!-- Keranjang -->
+</body>
