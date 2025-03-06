@@ -1,9 +1,84 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+.c-container-modal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
 .c-modal{
+    padding: 10% 4%;
+
+    width: 30vw;
+    height: 20vw;
+
+    display: grid;
+    place-content: center;
+    
+    border-radius: 10px;
+
+    font-family: "Markazi Text";
+    text-align: center;
+
+    background-color: #FAF7EA;
+
+    position: absolute; 
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 5;
 }
+
+.c-icon-close{
+    width: 6%;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.c-container-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.c-modal>h1 {
+    font-size: 150%;
+    font-weight: 700;
+}
+
+.c-modal>p {
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.c-modal>button {
+    background-color: #675718;
+
+    border-radius: 5px;
+
+    font-size: 110%;
+    font-weight: 200;
+    color: white;
+}
+
+
+
+
+.c-hide {
+    display: none;
+}
+
+.c-n-hide {
+    display: block;
+}
+
+
 
 /* font */
 .markazi-text-beranda {
