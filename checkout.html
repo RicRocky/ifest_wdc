@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFEST - WDC</title>
+
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Import VI -->
+    <link rel="stylesheet" href="css/vi.css">
+
+    <style>
+        .line-clamp {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+        }
+    </style>
+
+</head>
+
+<body class="m-0 p-0 relative bg-[var(--s2)] overflow-x-hidden">
+    <!-- Header -->
+    <header class="px-3 grid grid-cols-3 bg-[var(--p1)]">
+        <div class="flex">
+            <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="beranda.html" class="c-f1 px-3 text-xl ">Beranda</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="toko.html" class="c-f1 px-3 text-xl ">Toko</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="edukasi.html" class="c-f1 px-3 text-xl ">Edukasi</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="donasi.html" class="c-f1 px-3 text-xl ">Donasi</a>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <a href="beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl">Arunika</a>
+        </div>
+        <div class="flex items-center justify-end">
+            <img src="public/cart.png" class="mr-6 h-[1.5vw]">
+            <img src="public/profile.png" class="mr-6 h-[1.5vw]">
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Content -->
+    <div class="w-screen h-[6vh] bg-[var(--black)] flex items-center overflow-x-hidden">
+        <img src="public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 w-[2%]">
+        <div class="pb-1 relative grid place-content-center">
+            <input type="text" class="c-f2 w-[35vw] bg-[var(--black)] outline-[0] text-white"
+                placeholder="Cari Barang di Keranjang Anda">
+            <div class="w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"></div>
+        </div>
+    </div>
+
+    <!-- Judul -->
+    <div class="flex my-2 ml-4">
+        <img class="w-[4vw] h-[4vw]" src="public/merah_cart.png" alt="keranjang">
+        <h1 class="c-f1 text-[3vw] grid place-content-center font-bold">Pembayaran</h1>
+    </div>
+    <!-- Judul -->
+    <!-- Alamat -->
+    <div class="flex bg-[var(--p1)]">
+        <div class="w-[4vw]">
+            <img class="mx-3 mt-1 w-[2.5vw] h-[2.5vw]" src="public/icon-location.png" alt="lokasi">
+        </div>
+        <div class="c-f1">
+            <div class="flex items-center">
+                <p class="text-[2.0vw] h-[2.5vw]">Alamat Saya</p>
+                <img class="w-[1.2vw] h-[1.4vw] mx-3" src="public/icon-edit.png" alt="edit">
+            </div>
+            <div>
+                <div class="flex items-center ">
+                    <p class="text-[1.5vw] font-semibold">Ricky Cahyadi</p>
+                    <div class="w-[2px] h-[25px] mx-3 bg-black "></div>
+                    <p class="text-[1.5vw] font-semibold">0839 - 0909 - 9087</p>
+                </div>
+                <p class="mt-[-0.5vw]">Jl. Raya Kalirungkut No.98, Kali Rungkut, Kec. Rungkut, Surabaya, Jawa Timur
+                    60293</p>
+            </div>
+        </div>
+    </div>
+    <!-- Alamat -->
+    <!-- chekout -->
+    <div class="h-[1vw]"></div>
+    <div>
+        <div class="grid grid-cols-6 h-[12vw] bg-white">
+            <div class="flex items-center justify-center col-span-2">
+                <div class="mx-6 w-[110px] h-[110px] ml-[-2vw] bg-black"></div>
+            </div>
+            <div class="col-span-2 w-[90%] py-4 ml-[-8vw]">
+                <div>
+                    <p class="c-f2 text-[1.4vw] w-[80%] line-clamp">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece
+                        Camouflage
+                        Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                </div>
+                <div class="flex">
+                    <p
+                        class="c-f1 font-bold mr-2 mt-3 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-[1.1vw]">
+                        Gratis Ongkir</p>
+                    <p class="c-f1 font-bold mr-2 mt-3 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-[1.1vw]">Terjamin
+                    </p>
+                </div>
+            </div>
+            <div class="grid place-content-center">
+                <div class="flex items-center">
+                    <div class="w-[1.8vw] h-[1.8vw] bg-black rounded-[50%] flex items-center justify-center">
+                        <img class="w-[80%]" src="public/Kurang.png" alt="">
+                    </div>
+                    <p class="mx-4 c-f1 text-[3vw]">1</p>
+                    <div class="w-[1.8vw] h-[1.8vw] bg-[var(--n5)] rounded-[50%] flex items-center justify-center">
+                        <img class="w-[80%]" src="public/Tambah.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="grid place-content-center">
+                <h1 class="c-f1 text-[2.3vw] text-[var(--t8)] grid place-content-center">Rp40.000</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-[3px]"></div>
+    <div class="grid grid-cols-5 c-f1 h-[4vw] bg-white">
+        <div class="col-start-4 col-span-2 h-[4vw] flex items-center">
+            <img class="h-[40%]" src="public/icon-coupon.png" alt="">
+            <p class="mx-3 text-[2vw] w-[35%]">Kupon: </p>
+            <div class="w-[30%]">
+                <div class="relative w-[9.7vw] h-[2.7vw]">
+                    <h5 class="c-f1 m-0 py-0 px-2 font-bold text-[1.8vw] bg-[var(--t2)] rounded-xs relative z-[2]">
+                        Diskon 70%
+                    </h5>
+                    <img src="public/thunder.png" class="w-[14%] left-[-0.8vw] top-[-7px] z-[10] absolute">
+                </div>
+            </div>
+            <p class="text-[1.3vw] underline text-[var(--p8)]">Ubah Voucher</p>
+        </div>
+    </div>
+
+    <div class="h-[3px]"></div>
+    <div class="grid grid-cols-5 c-f1 h-[4vw] bg-white">
+        <div class="col-start-4 col-span-2 h-[4vw] flex items-center">
+            <img class="h-[40%] " src="public/icon-truck.png" alt="">
+            <p class="mx-3 text-[2vw] w-[35%]">Jenis Pengiriman: </p>
+            <div class="w-[30%] flex items-center">
+                <p class="text-[2vw] mr-2">Hemat</p>
+                <p class="text-[1.3vw] underline text-[var(--p8)]">Ubah</p>
+            </div>
+            <p class="text-[2vw]">Rp10.000</p>
+        </div>
+    </div>
+
+    <div class="h-[3px]"></div>
+    <div class="grid grid-cols-2 c-f1 h-[4vw] bg-white px-[3.5vw]">
+        <div class="flex items-center">
+            <p class="mr-3 text-[2vw]">Pesan: </p>
+            <input class="h-[2.5vw] w-[50%] bg-[var(--p1)] p-3 rounded-md" type="text"
+                placeholder="(Optional) Tinggalkan Pesan untuk toko">
+        </div>
+        <div class="col-start-2 flex items-center justify-end text-[2vw]">
+            <p>Total (1 Produk): <span class="font-bold">Rp46.000</span></p>
+        </div>
+    </div>
+    <!-- checkout -->
+    <!-- Bayar -->
+    <div class="h-[1vw]"></div>
+    <div class="grid grid-cols-2 c-f1 h-[4vw] bg-white px-[3.5vw] place-content-center">
+        <p class="mr-3 text-[2vw]">Koin Aru </p>
+        <div class="flex items-center justify-end">
+            <p class="text-[2vw] mr-3">20.000</p>
+            <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="sr-only peer" id="toggleSwitch">
+                <div class="w-[3.52vw] h-[1.9vw] bg-gray-300 peer-focus:ring-green-300 rounded-full 
+                    peer-checked:after:translate-x-5 peer-checked:after:border-white after:absolute 
+                    after:top-0.5 after:left-0.5 after:bg-white after:border-gray-300 after:border after:rounded-full 
+                    after:h-5 after:w-5 after:transition-all peer-checked:bg-green-500">
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="h-[3px]"></div>
+    <div class="h-[8vw] bg-white flex items-center">
+        <div class="px-[3.5vw] mr-7">
+            <p class="mr-3 text-[2vw] c-f1">Metode Pembayaran </p>
+            <div class="flex c-f1 text-[1.5vw] items-center">
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--p1)]">COD</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">ShopeePay</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Transfer Bank</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Gopay</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Kredit</div>
+            </div>
+        </div>
+    </div>
+    <div class="h-[3px]"></div>
+    <div class="h-[13vw] bg-white flex justify-end items-center c-f1 text-[1.4vw] text-gray-600">
+        <p class="m-5 ">Subtotal Produk<br>Subtotal Pengiriman<br>Biaya Layanan<br>Koin Aru<br>Kupon Diskon</p>
+        <p class="m-5 mr-[4.5%]">Rp40.000<br>Rp10.000<br>Rp1.000<br>-Rp20.000<br>-Rp4.000</p>
+    </div>
+    <div class="h-[3px]"></div>
+    <div class="h-[5vw] bg-white c-f1 flex justify-end items-center text-[2.3vw]">
+        <p class="px-[3.5vw]">Total Pembayaran: <span class="font-bold text-[var(--t8)]">Rp46.000</span></p>
+    </div>
+</body>
