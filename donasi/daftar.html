@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFEST - WDC</title>
+
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Import VI -->
+    <link rel="stylesheet" href="../css/vi.css">
+    
+    <!-- Import Carousel -->
+    <link rel="stylesheet" href="../css/carousel.css">
+
+    <style>
+        :root{
+            --bl : 50px;
+            --br : 50px;
+            --bb : 90px;
+            --lebar : 100px;
+        }
+
+        .c-segitiga-up {
+            border-left: var(--bl) solid transparent;
+            border-right: var(--br) solid transparent;
+            border-bottom: var(--bb) solid #555;
+        }
+        
+        .c-segitiga-bottom {
+            border-left: var(--bl) solid transparent;
+            border-right: var(--br) solid transparent;
+            border-top: var(--bb) solid #555;
+        }
+
+        .c-segitiga-hide{
+            border-left: var(--bl) solid transparent;
+            border-right: var(--br) solid transparent;
+            border-top: var(--bb) solid transparent;
+        }
+    </style>
+
+    
+</head>
+<body class="m-0 p-0 relative bg-[var(--s2)] overflow-x-hidden">
+    <!-- Header -->
+    <header class="px-3 grid grid-cols-3 bg-[var(--p1)]">
+        <div class="flex">
+            <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="beranda.html" class="c-f1 px-3 text-xl ">Beranda</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="toko.html" class="c-f1 px-3 text-xl ">Toko</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="edukasi.html" class="c-f1 px-3 text-xl ">Edukasi</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="donasi.html" class="c-f1 px-3 text-xl ">Donasi</a>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <a href="beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl">Arunika</a>
+        </div>
+        <div class="flex items-center justify-end">
+            <img src="public/cart.png" class="mr-6 h-[1.5vw]">
+            <img src="public/profile.png" class="mr-6 h-[1.5vw]">
+        </div>
+    </header>
+    <!-- Header -->
+    
+    <!-- Content -->
+    <div class="c-f1 font-medium flex bg-[var(--p3)]">
+        <div class="w-[40vw] h-[94]">
+            <div class="flex">
+                <div class="c-segitiga-bottom -ml-12"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+            </div>
+            <div class="flex mt-3">
+                <div class="c-segitiga-up -ml-12"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-hide -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+            </div>
+            <div class="flex mt-3">
+                <div class="c-segitiga-bottom -ml-12"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+            </div>
+            <div class="flex mt-3">
+                <div class="c-segitiga-up -ml-12"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-hide -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-hide -ml-9"></div>
+
+                <div class="c-segitiga-bottom -ml-9"></div>
+            </div>
+            <div class="flex mt-3">
+                <div class="c-segitiga-hide -ml-12"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-hide -ml-12"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+            </div>
+            <div class="flex mt-3">
+                <div class="c-segitiga-hide -ml-12"></div>
+
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+                
+                <div class="c-segitiga-bottom -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+
+                <div class="c-segitiga-hide -ml-9"></div>
+                <div class="c-segitiga-up -ml-9"></div>
+            </div>
+        </div>
+        <div class="pb-[3vh] w-[60vw] flex items-center justify-center">
+            
+        </div>
+    </div>
+
+    <!-- Content -->
+
+    <!-- Footer -->
+    <!-- Footer -->
+</body>
+</html>
