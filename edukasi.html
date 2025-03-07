@@ -1,116 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFEST - WDC</title>
 
     <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Import VI -->
-    <link rel="stylesheet" href="css/vi.css">
-    
-</head>
-<body class="m-0 p-0 relative">
+    <link rel="stylesheet" href="css/vi.css" />
+  </head>
+
+  <body class="m-0 p-0 relative">
     <!-- Header -->
     <header class="px-3 grid grid-cols-3 bg-[var(--p1)]">
-        <div class="flex c-f1">
-            <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
-                <a href="beranda.html" class="c-f1 px-3 text-xl ">Beranda</a>
-            </div>
-            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
-                <a href="toko.html" class="c-f1 px-3 text-xl ">Toko</a>
-            </div>
-            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
-                <a href="edukasi.html" class="c-f1 px-3 text-xl ">Edukasi</a>
-            </div>
-            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
-                <a href="donasi.html" class="c-f1 px-3 text-xl ">Donasi</a>
-            </div>
+      <div class="flex c-f1">
+        <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+          <a href="beranda.html" class="c-f1 px-3 text-xl">Beranda</a>
         </div>
-        <div class="grid place-content-center">
-            <a href="beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl">Arunika</a>
+        <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+          <a href="toko.html" class="c-f1 px-3 text-xl">Toko</a>
         </div>
-        <div class="flex items-center justify-end">
-            <img src="public/cart.png" class="mr-6 h-[1.5vw]">
-            <img src="public/profile.png" class="mr-6 h-[1.5vw]">
+        <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+          <a href="edukasi.html" class="c-f1 px-3 text-xl">Edukasi</a>
         </div>
+        <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+          <a href="donasi.html" class="c-f1 px-3 text-xl">Donasi</a>
+        </div>
+      </div>
+      <div class="grid place-content-center">
+        <a href="beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl"
+          >Arunika</a
+        >
+      </div>
+      <div class="flex items-center justify-end">
+        <img src="public/cart.png" class="mr-6 h-[1.5vw]" />
+        <img src="public/profile.png" class="mr-6 h-[1.5vw]" />
+      </div>
     </header>
     <!-- Header -->
 
-    <section class="bg-[var(--s2)] ">
-        <div class="relative text-center">
-            <img src="public/bg-header-edukasi.png" alt="baju ramah lingkungan" class="opacity-40 w-full h-[30vw] ">
+    <section class="bg-[var(--s2)]">
+      <!-- HEADER EDUKASI -->
+      <div class="relative text-center">
+        <img
+          src="public/bg-header-edukasi.png"
+          alt="baju ramah lingkungan"
+          class="opacity-40 w-full lg:h-[30vw]"
+        />
 
-            <h1 class="absolute text-[7vw] top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%] c-f-judul leading-[1]">Nggak cuma <B>keren</B> tapi<br>juga <B>peduli</B> sama <b>bumi</B></h1>
+        <h1
+          class="absolute text-[13vw] top-[35%] left-[50%] w-full lg:text-[7vw] lg:top-[30%] translate-x-[-50%] translate-y-[-50%] c-f-judul leading-[1]"
+        >
+          Nggak cuma <b>keren</b> tapi<br />juga <b>peduli</b> sama <b>bumi</b>
+        </h1>
 
-            <img src="public/transisi-header edukasi-2.png" alt="" class="w-full h-[15vw] -mt-[10vw] relative z-1">   
+        <img
+          src="public/transisi-header edukasi-2.png"
+          alt=""
+          class="w-full -mt-[11vw] lg:h-[20vw] lg:-mt-[10vw] relative z-1"
+        />
+      </div>
+
+      <!-- APA ITU SUSTAINABLE FASHION -->
+      <div class="text-center">
+        <img
+          src="public/sustainable-fashion.png"
+          alt="ilustrasi sustainable fashion"
+          class="w-[80vw] md:w-[50vw] inline-block"
+        />
+
+        <p
+          class="c-f1 text-[5vw] md:text-[3vw] lg:text-[2.5vw] px-10 md:px-[20vw] mb-[12%] md:mb-[6%] lg:mb-[6%]"
+        >
+          Sustainable fashion adalah inovasi dalam industri fashion yang
+          berfokus pada keberlanjutan lingkungan, sosial, dan ekonomi. Konsep
+          ini bertujuan untuk mengurangi dampak negatif industri fashion
+          terhadap bumi dan masyarakat
+        </p>
+      </div>
+
+      <img src="public/edukasi-2.png" alt="" />
+
+      <!-- TAPI TAHUKAH KAMU -->
+      <div
+        class="bg-[var(--p3)] -mt-[5px] grid md:grid-cols-2 lg:grid-cols-4 px-[10%]"
+      >
+        <div class="mx-5 text-center">
+          <img
+            src="public/tahukah-kamu-1.png"
+            alt=""
+            class="w-[45vw] md:w-[25vw] inline-block mb-3"
+          />
+          <p class="text-[4.5vw] md:text-[2.8vw] lg:text-[1.8vw]">
+            Industri tekstil menyumbang <b>10% emisi karbon global</b> dan
+            <b>20% limbah air dunia</b>.
+          </p>
         </div>
 
-        <div class="text-center mx-[30%] pb-[5vw] pt-[5vw]">
-            <div class="flex justify-center">
-                <img src="public/sustainable-fashion.png" alt="ilustrasi sustainable fashion" class="w-[30vw]">
-                
-            </div>
-    
-            <p class="c-f1 text-[2vw]">Sustainable fashion adalah inovasi dalam industri fashion yang berfokus pada keberlanjutan lingkungan, sosial, dan ekonomi. Konsep ini bertujuan untuk mengurangi dampak negatif industri fashion terhadap bumi dan masyarakat</p>
+        <div class="mx-5 text-center mt-[10%]">
+          <img
+            src="public/tahukah-kamu-2.png"
+            alt=""
+            class="w-[45vw] md:w-[25vw] md:-mt-[2vw] lg:pt-[1.5vw] inline-block mb-3"
+          />
+          <p class="text-[4.5vw] md:text-[2.8vw] lg:text-[1.8vw]">
+            Setiap tahun, <b>jutaan ton pakaian</b> berakhir di tempat
+            <b>pembuangan sampah</b>.
+          </p>
         </div>
 
-        <img src="public/edukasi-2.png" alt="">
-
-
-        <div class="bg-[var(--p3)] grid md:grid-cols-2 px-[10%]">
-
-            <div class="mx-10 text-center">
-                <img src="public/tahukah-kamu-1.png" alt="">
-                <p class="px-10">Industri tekstil menyumbang <b>10% emisi karbon global</b> dan <b>20% limbah air dunia</b>.</p>
-
-            </div>
-
-            <div class="mx-10 text-center mt-[7%]">
-                <img src="public/tahukah-kamu-2.png" alt="">
-                <p class="px-10">Setiap tahun, <b>jutaan ton pakaian</b> berakhir <b>di tempat pembuangan sampah</b>.</p>
-
-            </div>
-
-            <div class="mx-10 text-center">
-                <img src="public/tahukah-kamu-3.png" alt="">
-                <p class="px-10">Banyak <b>pekerja</b> fashion yang bekerja dengan <b>upah rendah</b> dan kondisi <b>tidak manusiawi</b>.</p>
-
-            </div>
-
-            <div class="mx-10 text-center mt-[3%]">
-                <img src="public/tahukah-kamu-4.png" alt="">
-                <p class="px-10">Produksi pakaian membutuhkan <b>banyak air, energi, dan bahan baku</b> yang tidak terbarukan.</p>
-
-            </div>
-            
+        <div class="mx-5 text-center mt-[10%]">
+          <img
+            src="public/tahukah-kamu-3.png"
+            alt=""
+            class="w-[45vw] md:w-[25vw] md:-mt-[1vw] inline-block mb-3"
+          />
+          <p class="text-[4.5vw] md:text-[2.8vw] lg:text-[1.8vw]">
+            Banyak <b>pekerja</b> fashion yang bekerja dengan
+            <b>upah rendah</b> dan kondisi <b>tidak manusiawi</b>.
+          </p>
         </div>
-        
+
+        <div class="mx-5 text-center mt-[10%]">
+          <img
+            src="public/tahukah-kamu-4.png"
+            alt=""
+            class="w-[45vw] md:w-[25vw] inline-block mb-3"
+          />
+          <p class="text-[4.5vw] md:text-[2.8vw] lg:text-[1.8vw]">
+            Produksi pakaian membutuhkan
+            <b>banyak air, energi, dan bahan baku</b> yang tidak terbarukan.
+          </p>
+        </div>
+      </div>
     </section>
-
-
-
-
-
-
-
-
 
     <!-- Footer -->
     <footer class="bg-[var(--black)] p-5 text-white">
-        <div class="grid grid-cols-3">
-            <div class="grid place-content-center text-center">
-                <h1 class="c-f-judul text-4xl">Arunika</h1>
-                <p class="c-f1 w-64">“Setiap pakaian punya cerita. Pilihlah cerita yang ramah lingkungan"</p>
-            </div>
+      <div class="grid grid-cols-3">
+        <div class="grid place-content-center text-center">
+          <h1 class="c-f-judul text-4xl">Arunika</h1>
+          <p class="c-f1 w-64">
+            “Setiap pakaian punya cerita. Pilihlah cerita yang ramah lingkungan"
+          </p>
         </div>
-        <div class="w-full grid place-content-center opacity-70">
-            <h1 class="c-f1">Copyright@2025 | Ricky Cahyadi, Aileen Averina, Hans Aristo</h1>
-        </div>
+      </div>
+      <div class="w-full grid place-content-center opacity-70">
+        <h1 class="c-f1">
+          Copyright@2025 | Ricky Cahyadi, Aileen Averina, Hans Aristo
+        </h1>
+      </div>
     </footer>
     <!-- Footer -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-</body>
+  </body>
 </html>
