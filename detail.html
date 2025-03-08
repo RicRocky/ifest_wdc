@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFEST - WDC</title>
+
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Import VI -->
+    <link rel="stylesheet" href="css/vi.css">
+
+    <!-- Import Carousel -->
+    <link rel="stylesheet" href="css/carousel.css">
+
+</head>
+
+<body class="m-0 p-0 relative bg-[var(--s2)] overflow-x-hidden">
+    <!-- Header -->
+    <header class="px-3 grid grid-cols-3 bg-[var(--p1)]">
+        <div class="flex">
+            <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="beranda.html" class="c-f1 px-3 text-xl ">Beranda</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="toko.html" class="c-f1 px-3 text-xl ">Toko</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="edukasi.html" class="c-f1 px-3 text-xl ">Edukasi</a>
+            </div>
+            <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+                <a href="donasi.html" class="c-f1 px-3 text-xl ">Donasi</a>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <a href="beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl">Arunika</a>
+        </div>
+        <div class="flex items-center justify-end">
+            <img src="public/cart.png" class="mr-6 h-[1.5vw]">
+            <img src="public/profile.png" class="mr-6 h-[1.5vw]">
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Pencarian -->
+    <div class="w-screen h-[6vh] bg-[var(--black)] flex items-center overflow-x-hidden">
+        <img src="public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 w-[2%]">
+        <div class="pb-1 relative grid place-content-center">
+            <input type="text" class="c-f2 w-[35vw] bg-[var(--black)] outline-[0] text-white"
+                placeholder="Cari Baju, Aksesoris dan barang-barang menarik lainnya">
+            <div class="w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"></div>
+        </div>
+    </div>
+    <!-- Pencarian -->
+    <!-- Content -->
+    <div class="grid grid-cols-2 bg-white">
+        <div class="col-start-1 w-[47vw] h-[36vw] bg-black"></div>
+        <div class="col-start-2 w-full bg-white p-5">
+            <p class="c-f2 text-[2vw] w-[90%]">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece
+                Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="flex c-f1 items-center">
+                <div class="flex items-center">
+                    <p class="text-[2vw]">5.0</p>
+                    <img class="h-[1.5vw] mx-1" src="public\bintang5.png" alt="">
+                </div>
+                <div class="mx-1 h-[20px] w-[1px] bg-black"></div>
+                <p class="mx-1 text-[2vw]">1 Penilaian</p>
+                <div class="mx-1 h-[20px] w-[1px] bg-black"></div>
+                <p class="text-[2vw] ml-1">1 Stok</p>
+            </div>
+            <div class="flex items-center ">
+                <p class="text-[2.8vw] text-[var(--t8)] c-f1">Rp36.000</p>
+                <img class="w-[2.3vw] h-[2vw] m-2" src="public/kupon-diskon.png" alt="">
+                <p class="c-f1 line-through text-[1.5vw] text-gray-500">Rp40.000</p>
+            </div>
+            <div class="flex items-center c-f1 mb-2">
+                <p class="w-[10vw] text-[2vw] text-gray-500">Kupon</p>
+                <div class="relative">
+                    <h5 class="c-f1 m-0 py-0 px-2 font-bold text-[1.8vw] bg-[var(--t2)] rounded-xs relative z-[2]">
+                        Diskon 70%
+                    </h5>
+                    <img src="public/thunder.png" class="w-[14%] left-[-0.6vw] top-[-7px] z-[10] absolute">
+                </div>
+            </div>
+            <div class="flex items-center c-f1">
+                <p class="w-[10vw] text-[2vw] text-gray-500">Pengiriman</p>
+                <p class="text-[2vw] mr-2">Rp7.000 - Rp10.000</p>
+                <img class="w-[1.3vw]" src="public/icon-panah-bawah.png" alt="">
+            </div>
+            <div class="flex items-center c-f1">
+                <p class="w-[10vw] text-[2vw] text-gray-500">Kuantitas</p>
+                <div class="flex items-center">
+                    <div class="w-[1.8vw] h-[1.8vw] bg-black rounded-[50%] flex items-center justify-center">
+                        <img class="w-[80%]" src="public/Kurang.png" alt="">
+                    </div>
+                    <p class="mx-4 c-f1 text-[3vw]">1</p>
+                    <div class="w-[1.8vw] h-[1.8vw] bg-[var(--n5)] rounded-[50%] flex items-center justify-center">
+                        <img class="w-[80%]" src="public/Tambah.png" alt="">
+                    </div>
+                </div>
+                <p class="text-[2vw] ml-10 text-gray-500">Hanya Terdapat 1 Produk</p>
+            </div>
+            <div class="flex w-full h-[3.3vw] c-f1 my-3">
+                <button
+                    class="w-[60%] mr-2 h bg-[var(--p8)] text-white rounded-[3px] text-[2vw] drop-shadow-md">Beli</button>
+                <button class="w-[17%] mr-2 h bg-[var(--p8)] grid place-content-center rounded-[3px] drop-shadow-md">
+                    <img class="w-[2vw] invert-[93%]" src="public/cart.png" alt="">
+                </button>
+                <button class="w-[17%] h bg-[var(--p8)] grid place-content-center rounded-[3px] drop-shadow-md">
+                    <img class="w-[2vw]" src="public/icon-share.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="h-[1vw]"></div>
+    <div class="c-f1 bg-white px-20 py-3">
+        <p class="mr-3 text-[2.5vw] font-semibold">Deskripsi Produk</p>
+    </div>
+    <div class="h-[2px]"></div>
+    <div class="c-f1 bg-white px-20 py-5">
+        <div class="mr-3 text-[1.5vw]">
+            <p>Baju Renang Remaja Perempuan sampai Wanita Dewasa Two Pieces Lengan Panjang</p>
+            <p>- Baju renang Two Pieces, model baju resleting dan two-in-one celana, bagian celana ada short menyatu, lebih aman dan nyaman dipakai - Warna
+                dan model simple and stylish</p>
+            <p>- Bagian baju dilengkapi bra pad yang bisa dikeluarkan</p>
+            <p>- Bn kain premium quality, breathable, cepat kering, halus dan nyaman untuk kulit</p>
+            <p>- Model baju renang yang memberikan efek pinggang slimmer dan brighter skin look</p>
+            <p>- Baju renang ini cocok dipakai untuk ke pantai, berenang dan berendam air panas</p>
+            <br>
+            <p>- Isi : 1 x Baju Renang Two Piece ( baju dan 2- in-1 shorts ) (tanpa topi, topi hanya
+                props foto)</p>
+            <p>- Bahan polyester, spandex</p>
+            <p>- Pilihan warna : Green dan Purple</p>
+            <br>
+            <p>Detail Ukuran :</p>
+            <p>Untuk menentukan size, diukur dan dicocokan sesuai detail ukuran di bawah <br>
+                size M ( lebar dada 35cm, lebar pinggang 29cm, panjang baju 48cm, panjang celana 29cm, berat 40-46kg) <br>
+                size L ( lebar dada 37cm, lebar pinggang 31cm, panjang baju 50cm, panjang celana 30cm, berat 46-52kg) <br>
+                size XL ( lebar dada 39cm, lebar pinggang 33cm, panjang baju 52cm, panjang celana 31cm, berat 52-58kg) <br>
+                size 2XL ( lebar dada 41cm, lebar pinggang 35cm, panjang baju 53cm, panjang celana 32cm, berat 58-64kg)</p>
+
+
+            <p>1. Sebaiknya diukur【lebar dada, lebar pinggang, panjang baju】untuk menentukan size tepat</p>
+            <p>2. Karena pengukuran dan jahit manual, toleransi perbedaan ukuran dari pabrik kurang lebih 1-2cm.</p>
+            <p>3. Mohon maaf tidak menerima penukaran size / pengembalian
+                produk, karena faktor higienis dan detail ukuran sudah tertera jelas di deskripsi produk.</p>
+            <p>4. Setiap baju sebelum dikirim akan dicheck, bila ada complainan perlu disertai video unboxing dari awal buka paket tidak terpotong. Silahkan chat terlebih dahulu bila ada kendala, terima kasih</p>
+        </div>
+    </div>
+    <div class="h-[1vw]"></div>
+    <div class="c-f1 bg-white px-20 py-3">
+        <p class="mr-3 text-[2.5vw] font-semibold">Penilaian Produk</p>
+    </div>
+    <div class="h-[2px]"></div>
+
+    <div class="h-[60vw] mx-auto p-[3vw] bg-white c-f1">
+        <!-- Rating Box -->
+        <div class="mx-10 bg-[var(--s2)] p-[2.5vw] flex  items-center justify-between">
+            <div class="text-center w-[15vw] grid place-content-center">
+                <p class="text-center text-[3vw] font-bold text-[var(--t8)]">5.0 dari 5.0</p>
+                <img src="public/bintang5.png" alt="Rating 5 Bintang" class="w-[10vw]">
+            </div>
+            <div class="h-[10vw] w-[1px] bg-[var(--p1)]"></div>
+            <div class="flex flex-wrap w-[65vw] mx-10">
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--p1)]">Semua</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Bintang 5 (1)</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Bintang 4</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Bintang 3</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Bintang 2</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Bintang 1</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Dengan Komentar (1)</div>
+                <div class="mr-2 px-2 py-[1px] border-[var(--p8)] border-[1pt] bg-[var(--s1)]">Dengan Media (1)</div>
+            </div>
+        </div>
+
+        <!-- Review Section -->
+        <div class="mt-[4vh] p-[3vw] bg-white rounded-lg">
+            <div class="flex items-center gap-[1vw]">
+                <div class="w-[5vw] h-[5vw] bg-gray-300 rounded-full"></div>
+                <div>
+                    <p class="font-bold text-lg">Angelica Belina</p>
+                    <img src="public/bintang5.png" alt="Rating 5 Bintang" class="w-[8vw] md:w-[120px]">
+                    <p class="text-gray-500 text-sm">2023-09-10 11:06</p>
+                </div>
+            </div>
+            <p class="mt-[2vh]">
+                Bahannya oke banget, tebal gak nembus, walau thrift masih benar2 seperti baru, gk nyesel beli.
+            </p>
+
+            <!-- Gambar Review -->
+            <div class="flex gap-[1vw] mt-[2vh]">
+                <div class="w-[8vw] h-[8vw] bg-gray-300"></div>
+                <div class="w-[8vw] h-[8vw] bg-gray-300"></div>
+            </div>
+
+            <!-- Respon Toko -->
+            <div class="bg-[var(--p1)] p-[1vw] mt-[3vh]">
+                <p class="font-bold">Respon toko:</p>
+                <p>Terima kasih banyak kak, jangan lupa belanja lagi</p>
+            </div>
+        </div>
+        <div class="h-[2px] w-[92vw] bg-[var(--p1)] mx-5 "></div>
+        <!-- Pagination -->
+        <div class="flex justify-center mt-[3vh]">
+            <span class="mx-[1vw] font-bold text-lg">1</span>
+            <button class="text-gray-500 text-lg">&gt;</button>
+        </div>
+    </div>
+    <div>
+        <p class="mr-3 text-[2.5vw] font-semibold pt-5 px-10 c-f1">Pilihan Produk Lainnya</p>
+    </div>
+    <div class="p-4 flex justify-center flex-wrap">
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+        <div class="w-[160px] mx-3 my-3 bg-white">
+            <div class=" h-[160px] w-[160px] bg-[var(--black)]"></div>
+            <div class="flex">
+                <p class="c-f1 text-xl font-bold ml-1 mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-xs">Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-xs">Terjamin</p>
+            </div>
+            <p class="mx-2 c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="mx-2 c-f1 flex items-center justify-between font-semibold">
+                <p class="p-0 text-2xl text-[var(--t3)]">Rp40.000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-7 mt-5 grid place-content-center">
+        <button class="c-f1 text-2xl font-semibold rounded-lg p-2 w-[25vw] bg-[var(--p1)]">Lihat Lainnya</button>
+    </div>
+</body>
