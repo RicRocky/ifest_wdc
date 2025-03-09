@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Import VI -->
+    <link rel="stylesheet" href="../css/vi.css">
+
+    <style>
+        :root{
+            --garis: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 relative">
+   <!-- Pop Hamburger Menu -->
+   <div class="c-f1 hidden h-screen max-sm:w-[55vw] max-md:w-[40vw] bg-[var(--p4)] absolute z-40 resize-x overflow-auto" id="silang" onclick="Tutup()">
+    <div class="flex justify-end">
+        <img src="public/tutup.png" class="cursor-pointer mt-2 mr-2 w-[25px]">
+    </div>
+    <div class="mt-[2vw] text-center">
+        <a href="beranda.html" class="c-f-judul max-md:py-2 p-0 m-0 text-center text-4xl">Arunika</a>
+        <p class="max-md:px-2 max-sm:px-5 max-sm:text-sm">“Setiap pakaian punya cerita. Pilihlah cerita yang ramah lingkungan"</p>
+    </div>
+    <div class="mt-5">
+        <a class="mt-2 hover:bg-[var(--s1)] bg-[var(--s1)] grid place-content-center text-xl" href="beranda.html">
+            Beranda
+        </a>
+        <a href="toko.html" class="mt-2 text-xl hover:bg-[var(--s1)] grid place-content-center">
+              Toko
+        </a>
+        <a href="edukasi.html" class="mt-3 text-xl hover:bg-[var(--s1)] grid place-content-center">
+            Edukasi
+        </a>
+        <a href="donasi.html" class="mt-3 hover:bg-[var(--s1)] grid place-content-center text-xl">
+            Donasi
+        </a>
+    </div>
+</div>
+<!-- Pop Hamburger Menu -->
+
+<!-- Header -->
+<header class="c-f1 px-3 grid max-md:grid-cols-2 md:grid-cols-3 bg-[var(--p1)]">
+    <div class="max-md:hidden flex md:z-20">
+        <a class="px-3 text-xl mx-3 h-full hover:bg-[var(--s1)] grid place-content-center" href="beranda.html">
+            Beranda
+        </a>
+        <a href="toko.html" class="mr-3 h-full px-3 text-xl hover:bg-[var(--s1)] grid place-content-center">
+            Toko
+        </a>
+        <a href="edukasi.html" class="mr-3 px-3 text-xl h-full hover:bg-[var(--s1)] grid place-content-center">
+            Edukasi
+        </a>
+        <a href="donasi.html" class="mr-3 px-3 text-xl h-full hover:bg-[var(--s1)] grid place-content-center">
+            Donasi
+        </a>
+    </div>
+    <div class="max-md:ml-2 max-md:flex max-md:items-center md:grid md:place-content-center">
+        <!-- Hamburger Menu -->
+        <div class="md:hidden hover:bg-[var(--s1)] mr-5 py-2 px-4 cursor-pointer active:bg-blue h-full gird place-content-center" onclick="Buka()">
+            <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
+            <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
+            <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
+        </div>
+        <!-- Hamburger Menu -->
+        <a href="beranda.html" class="c-f-judul max-md:py-2 p-0 m-0 text-center text-4xl">Arunika</a>
+    </div>
+    <div class="flex items-center justify-end">
+        <div class="mr-3 px-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+            <a href="keranjang.html"><img src="public/cart.png" class=" max-md:w-[20px] md:w-[25px]"></a>
+        </div>
+        <div class="bg-[var(--s1)] mr-3 px-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+            <a href="login.html"><img src="public/profile.png" class="max-md:h-[20px] md:h-[25px] hover:bg-[var(--s1)]"></a>
+        </div>
+    </div>
+</header>
+<!-- Header -->
+    
+    <!-- Konten -->
+    <div class="my-3 flex">
+        <div class="w-[20vw] h-[90vh] py-3 bg-[var(--t5)] rounded-br-md rounded-tr-md drop-shadow-md grid gap-0 grid-cols-1 place-content-between">
+            <div class="c-f1 w-full h-auto">
+                <div class="pl-5 mb-2 flex items-center">
+                    <div class="bg-black w-[5%] h-[30px]"></div>
+                    <h1 class="ml-2 font-bold text-xl">Ricky Aileen Hans</h1>
+                </div>
+                <div class="my-2 bg-[var(--garis)] w-full h-[1px]"></div>
+                <div class="">
+                    <h1 class="ml-5 font-bold text-xl">Transaksi</h1>
+                    <div class="cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] mb-2 flex items-center" id="statusNavbar" onclick="BukaPanel('status')">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <h1 class="ml-2 font-bold text-lg">Status Transaksi</h1>
+                    </div>
+                    <div class="cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] flex items-center" id="historiNavbar" onclick="BukaPanel('histori')">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <h1 class="ml-2 font-bold text-lg">Histori</h1>
+                    </div>
+                </div>
+                <div class="my-2 bg-[var(--garis)] w-[100%] h-[1px]"></div>
+                <div class="">
+                    <h1 class="pl-5 font-bold text-xl">Pengaturan Akun</h1>
+                    <div class="cursor-pointer pl-5 py-2 mt-1 mb-2 bg-[var(--p4)] hover:bg-[var(--p4)] flex items-center" id="bioNavbar" onclick="BukaPanel('bio')">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <h1 class="ml-2 font-bold text-lg">Biodata</h1>
+                    </div>
+                    <div class="cursor-pointer pl-5 py-2 mb-2 hover:bg-[var(--p4)] flex items-center" id="alamatNavbar" onclick="BukaPanel('alamat')">
+                        <div class="bg-black w-[5%] h-[30px]"></div>
+                        <h1 class="pl-2 font-bold text-lg">Alamat</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <a class="ml-5 flex items-center" href="beranda.html">
+                    <img src="../public/keluar.png" class="h-[30px]">
+                    <h1 class="c-f1 ml-2 font-bold text-lg text-[var(--t3)]">Keluar</h1>
+                </a>
+            </div>
+        </div>
+        <!-- Biodata -->
+        <div class="w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md" id="bio">
+            <div class="m-3 p-3 rounded-md drop-shadow-md flex items-center justify-between bg-[var(--s1)]">
+                <h1 class="c-f1 mt-1 font-bold text-2xl" id="judul">Biodata Akun</h1>
+                <div class="flex items-center w-[25vw] justify-end">
+                    <div class="bg-black w-[5%] h-[30px]"></div>
+                    <h1 class="ml-2 c-f1 font-bold text-2xl">100 Koin</h1>
+                </div>
+            </div>
+
+            <div class="c-f1 mx-auto w-[70vw] text-xl font-semibold" id="bio">
+                <div class="ml-3">
+                    <div class="mb-2 flex items-center">
+                        <p class="w-[20%]">Username</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">Ricky Aileen Hans</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold" id="Username" onclick="">Ubah</h1>
+                        </div>
+                    </div>
+                    <div class="mb-2 flex items-center">
+                        <p class="w-[20%]">Tanggal Lahir</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">-</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold ">Ubah</h1>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="w-[20%]">Jenis Kelamin</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">-</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold ">Ubah</h1>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="mt-[5%] text-2xl font-extrabold">Kontak</h1>
+                
+                <div class="ml-3">
+                    <div class="mb-2 flex items-center">
+                        <p class="w-[20%]">Email</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">rickyaileenhansifest@gmail.com</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold ">Ubah</h1>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="w-[20%]">Nomor Handphone</p>
+                        <div class="ml-[10%] flex items-center">
+                            <p class="w-full">-</p>
+                            <h1 class="ml-5 text-[var(--s7)] font-bold ">Ubah</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Biodata -->
+
+        <!-- Histori Transaksi -->
+        <div class="hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md" id="histori">
+            <div class="m-3 p-3 rounded-md drop-shadow-md flex items-center justify-between bg-[var(--s1)]">
+                <h1 class="mt-1 font-bold text-2xl">Histori Transaksi</h1>
+            </div>
+            
+            <div class="h-[75vh] overflow-y-auto">
+                <div class="ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--t9)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Selesai</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <p class="text-lg">Rp20.000</p>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="mt-5 ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--t9)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Selesai</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <p class="text-lg">Rp20.000</p>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="mt-5 ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--t9)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Selesai</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <p class="text-lg">Rp20.000</p>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="mt-5 ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--t9)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Selesai</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <p class="text-lg">Rp20.000</p>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="mt-5 ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--t9)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Selesai</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <p class="text-lg">Rp20.000</p>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- Histori Transaksi -->
+
+        <!-- Status Transaksi -->
+        <div class="hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md" id="status">
+            <div class="m-3 p-3 rounded-md drop-shadow-md flex items-center justify-between bg-[var(--s1)]">
+                <h1 class="mt-1 font-bold text-2xl">Status Transaksi</h1>
+            </div>
+            
+            <div class="h-[75vh] overflow-y-auto">
+                <div class="ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--p6)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Proses</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <div class="flex">
+                                
+                                <p class="text-lg">20 Koin</p>
+                            </div>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="mt-5 ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--p6)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Proses</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <p class="text-lg">Rp20.000</p>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="mt-5 ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--p6)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Proses</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <p class="text-lg">Rp20.000</p>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="mt-5 ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--p6)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Proses</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <p class="text-lg">Rp20.000</p>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="mt-5 ml-6">
+                    <div class="flex">
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-2xl mr-4">Belanja</h1>
+                            <p class="mr-3 text-lg">29 Februari 2024</p>
+                            <div class="bg-[var(--p6)] rounded-lg drop-shadow-md">
+                                <h1 class="px-7 text-white text-sm">Proses</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-3 bg-black w-[150px] h-[150px]"></div>
+                        <div class="w-full">
+                            <p class="c-f2  text-lg">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+                            <p class="text-lg">Total Belanja</p>
+                            <p class="text-lg">Rp20.000</p>
+                            <div class="flex items-center justify-end">
+                                <a href="" class="text-xl text-[var(--p8)]">Detail Status</a>
+                                <button class="text-xl ml-3 mr-5 py-1 px-8 text-[var(--white)] rounded-md bg-[var(--p8)]">Beli Lagi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- Status Transaksi -->
+
+        <!-- Alamat -->
+        <div class="hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md" id="alamat">
+            <div class="m-3 p-3 rounded-md drop-shadow-md flex items-center justify-between bg-[var(--s1)]">
+                <h1 class="mt-1 font-bold text-2xl">Histori Transaksi</h1>
+            </div>
+            
+            <div class="c-f1">
+                <div class="ml-6 flex">
+                    <div class="w-[75%]">
+                        <div class="flex">
+                            <div class="flex items-center">
+                                <h1 class="font-bold text-2xl mr-5">Kos Baru</h1>
+                                <div class="bg-[var(--t6)] rounded-lg">
+                                    <h1 class="px-7 text-white text-sm">Utama</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xl">Jalan Rungkut Mejoyo Selatan VI Blok W No 57, Kali Rungkut, Rungkut, Surabaya, Jawa Timur, Indonesia</p>
+                    </div>
+                    <div class="bg-black h-[5vw] w-[1px]"></div>
+                    <div class="px-5 grid grid-cols-1 place-content-center w-[25%] font-semibold">
+                        <button class="bg-[var(--p4)] rounded-md drop-shadow-sm">Edit</button>
+                        <button class="mt-2 bg-[--default] rounded-md text-lg drop-shadow-sm">Jadikan Utama</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-5 w-[80vw] grid place-content-center">
+                <div class="bg-[var(--garis)] h-[1px] w-[60vw] "></div>
+            </div>
+            
+            <div class="c-f1">
+                <div class="ml-6 flex">
+                    <div class="w-[75%]">
+                        <div class="flex">
+                            <div class="flex items-center">
+                                <h1 class="font-bold text-2xl mr-5">Ubaya Tercinta</h1>
+                                <div class="bg-[var(--t6)] rounded-lg">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xl">Jalan Raya Kalirungkut, Kali Rungkut, Kec. Rungkut, Surabaya, Jawa Timur 60293</p>
+                    </div>
+                    <div class="bg-black h-[5vw] w-[1px]"></div>
+                    <div class="px-5 grid grid-cols-1 place-content-center w-[25%] font-semibold">
+                        <button class="bg-[var(--p4)] rounded-md drop-shadow-sm">Edit</button>
+                        <button class="mt-2 bg-[--t7] text-white drop-shadow-sm rounded-md text-lg">Jadikan Utama</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-5 w-[80vw] grid place-content-center">
+                <div class="bg-[var(--garis)] h-[1px] w-[60vw] "></div>
+            </div>
+
+            <div class="mt-7 flex items-center justify-center">
+                <button class="py-1 w-[30%] bg-[var(--p4)] rounded-md drop-shadow-sm text-xl font-bold">Tambah</button>
+            </div>
+        </div>
+        <!-- Alamat -->
+    </div>
+    <!-- Konten -->
+</body>
+<script>
+    const Tutup = () =>{
+        let nodeSilang = document.getElementById("silang");
+
+        nodeSilang.setAttribute("class", "hidden")
+    }
+    
+    const Buka = () =>{
+        let nodeSilang = document.getElementById("silang");
+
+        nodeSilang.setAttribute("class", "c-f1 h-screen max-sm:w-[55vw] max-md:w-[40vw] bg-[var(--p4)] absolute z-40 resize-x overflow-auto")
+    }
+
+    const BukaPanel = tipe => {
+        let nodeBio = document.getElementById("bio");
+        let nodeHistori = document.getElementById("histori");
+        let nodeAlamat = document.getElementById("alamat");
+        let nodeStatusTransaksi = document.getElementById("status");
+        
+        let nodeBioNavbar = document.getElementById("bioNavbar");
+        let nodeHistoriNavbar = document.getElementById("historiNavbar");
+        let nodeAlamatNavbar = document.getElementById("alamatNavbar");
+        let nodeStatusTransaksiNavbar = document.getElementById("statusNavbar");
+
+        console.log("masuk");
+        if (tipe == "bio"){
+            nodeBio.setAttribute("class", "w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeAlamat.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeHistori.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeStatusTransaksi.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+
+            nodeBioNavbar.setAttribute("class", "bg-[var(--p4)] cursor-pointer pl-5 py-2 mt-1 mb-2 hover:bg-[var(--p4)] flex items-center");
+            nodeAlamatNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 mb-2 hover:bg-[var(--p4)] flex items-center");
+            nodeHistoriNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] flex items-center");
+            nodeStatusTransaksiNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] mb-2 flex items-center");
+        }else if(tipe == "histori"){
+            nodeBio.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeAlamat.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeHistori.setAttribute("class", "w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md ");
+            nodeStatusTransaksi.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+
+            nodeBioNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 mt-1 mb-2 hover:bg-[var(--p4)] flex items-center");
+            nodeAlamatNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 mb-2 hover:bg-[var(--p4)] flex items-center");
+            nodeHistoriNavbar.setAttribute("class", "bg-[var(--p4)] cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] flex items-center");
+            nodeStatusTransaksiNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] mb-2 flex items-center");
+        }else if(tipe == "alamat"){
+            nodeBio.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeAlamat.setAttribute("class", "w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeHistori.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeStatusTransaksi.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+
+            nodeBioNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 mt-1 mb-2 hover:bg-[var(--p4)] flex items-center");
+            nodeAlamatNavbar.setAttribute("class", "bg-[var(--p4)] cursor-pointer pl-5 py-2 mb-2 hover:bg-[var(--p4)] flex items-center");
+            nodeHistoriNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] flex items-center");
+            nodeStatusTransaksiNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] mb-2 flex items-center");
+        }else{
+            nodeBio.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeAlamat.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeHistori.setAttribute("class", "hidden w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            nodeStatusTransaksi.setAttribute("class", "w-[80vw] mx-3 bg-[var(--t5)] rounded-md drop-shadow-md");
+            
+            nodeBioNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 mt-1 mb-2 hover:bg-[var(--p4)] flex items-center");
+            nodeAlamatNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 mb-2 hover:bg-[var(--p4)] flex items-center");
+            nodeHistoriNavbar.setAttribute("class", "cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] flex items-center");
+            nodeStatusTransaksiNavbar.setAttribute("class", "bg-[var(--p4)] cursor-pointer pl-5 py-2 hover:bg-[var(--p4)] mb-2 flex items-center");
+        }
+    }
+</script>
+</html>
