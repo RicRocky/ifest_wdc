@@ -1,150 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFEST - WDC</title>
 
     <!-- Import Tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Import VI -->
-    <link rel="stylesheet" href="css/vi.css">
+    <link rel="stylesheet" href="css/vi.css" />
+  </head>
+  <body class="flex c-f1 relative">
+    <!-- DAFTAR -->
+    <section class="c-daftar bg-[var(--s2)] w-[40vw] h-[100vh] absolute">
+      <div class="w-full px-[20%] text-[1.3vw]">
+        <div class="">
+          <div class="mb-5 text-center">
+            <h1 class="c-f-judul text-[7vw]">Arunika</h1>
+            <p>
+              Setiap pakaian punya cerita.<br />Yuk, pilih cerita yang ramah
+              lingkungan
+            </p>
+          </div>
 
-</head>
-<body class="flex c-f1 ">
-    <section class="c-daftar bg-[var(--s2)] w-[40vw] h-[100vh]">
-        <div class="w-full px-[20%] text-[1.3vw] ">
-           <div class="">
-                <div class="mb-5 mt-2 text-center">
-                    <h1 class="c-f-judul text-[5vw]">Arunika</h1>
-                    <p>Setiap pakaian punya cerita.<br>Yuk, pilih cerita yang ramah lingkungan</p>
-                </div>
-                
-                <div class="mb-4">
-                    <p>Email</p>
-                    <input type="email" name="" id="" placeholder="Email@gmail.com" class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]">
-                </div>
-        
-                <div class="mb-4">
-                    <p>Kata Sandi</p>
-                    <div class="flex items-center">
-                        <input type="password" name="" id="" placeholder="Masukan Kata Sandi" class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]">
-                        <img src="public/icon-mata-tutup.png" alt="" class="w-[1.5vw] h-[1.5vw] -ml-[3vw] relative z-1">
-                    </div>
-                </div>
+          <div class="mb-4">
+            <p>Email</p>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Email@gmail.com"
+              class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]"
+            />
+          </div>
 
-                <div class="mb-4">
-                    <p>Konfirmasi Kata Sandi</p>
-                    <div class="flex items-center">
-                        <input type="password" name="" id="" placeholder="Ulangi Kata Sandi" class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]">
-                        <img src="public/icon-mata-tutup.png" alt="" class="w-[1.5vw] h-[1.5vw] -ml-[3vw] relative z-1">
-                    </div>
-                </div>
-
-                <p class="text-center text-[70%] text-gray-500">Sudah Punya Akun ? <span class="text-[var(--t4)]">
-                    <a href=" "><u>Masuk</u></a>
-                </span></p>
-
-                <button class="w-full py-2 bg-[var(--p8)] text-white rounded-xl drop-shadow-lg">Daftar</button>
-        
-                <div class="my-1 grid grid-cols-3 items-center">
-                    <div class="bg-black w-100% h-[2%]"></div>
-
-                    <div>
-                        <p class="text-center text-[60%]">Atau</p>
-                    </div>
-
-                    <div class="bg-black w-100% h-[2%]"></div>
-                </div>
-                
-                
-                <button class="w-full py-2 bg-[var(--s3)] rounded-xl drop-shadow-lg flex justify-center items-center">
-                    <img src="public/icon-google.png" alt="" class="w-[1.5vw] h-[1.5vw] mr-[1vw]">
-                    Daftar Menggunakan Google
-                </button>
-           </div>
-
-            <div class="w-full h-full mt-[10%] py-2 px-3 flex items-center justify-between bg-[var(--s3)] rounded-lg drop-shadow-lg">
-                <div class="px-[12%] py-1.5 ml-[5%] ">
-                    <p>Masuk</p>
-                </div>
-    
-                <div class="w-[0.5%] py-5 bg-gray-300">
-                    
-                </div>
-                
-                <div class="px-[12%] py-1.5 mr-[5%] bg-[var(--s4)] rounded-lg">
-                    <p>Daftar</p>
-                </div>
+          <div class="mb-4">
+            <p>Kata Sandi</p>
+            <div class="flex items-center">
+              <input
+                type="password"
+                name=""
+                id=""
+                placeholder="Masukan Kata Sandi"
+                class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]"
+              />
+              <img
+                src="public/icon-mata-tutup.png"
+                alt=""
+                class="w-[1.5vw] h-[1.5vw] -ml-[3vw] relative z-1"
+              />
             </div>
+          </div>
+
+          <div class="mb-4">
+            <p>Konfirmasi Kata Sandi</p>
+            <div class="flex items-center">
+              <input
+                type="password"
+                name=""
+                id=""
+                placeholder="Ulangi Kata Sandi"
+                class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]"
+              />
+              <img
+                src="public/icon-mata-tutup.png"
+                alt=""
+                class="w-[1.5vw] h-[1.5vw] -ml-[3vw] relative z-1"
+              />
+            </div>
+          </div>
+
+          <p class="text-center text-[70%] text-gray-500 pb-2">
+            Sudah Punya Akun ?
+            <span class="text-[var(--t4)]">
+              <button onclick="Masuk()"><u>Masuk</u></button>
+            </span>
+          </p>
+
+          <button
+            class="w-full py-2 bg-[var(--p8)] text-white rounded-xl drop-shadow-lg"
+          >
+            Daftar
+          </button>
+
+          <div class="my-1 grid grid-cols-3 items-center">
+            <div class="bg-black w-100% h-[2%]"></div>
+
+            <div>
+              <p class="text-center text-[60%]">Atau</p>
+            </div>
+
+            <div class="bg-black w-100% h-[2%]"></div>
+          </div>
+
+          <button
+            class="w-full py-2 bg-[var(--s3)] rounded-xl drop-shadow-lg flex justify-center items-center"
+          >
+            <img
+              src="public/icon-google.png"
+              alt=""
+              class="w-[1.5vw] h-[1.5vw] mr-[1vw]"
+            />
+            Daftar Menggunakan Google
+          </button>
         </div>
+
+        <div
+          class="w-full h-full mt-[10%] py-2 px-3 flex items-center justify-between bg-[var(--s3)] rounded-lg drop-shadow-lg"
+        >
+          <button class="px-[12%] py-1.5 ml-[5%]" onclick="Masuk()">
+            <p>Masuk</p>
+          </button>
+
+          <div class="w-[0.5%] py-5 bg-gray-300"></div>
+
+          <button class="px-[12%] py-1.5 mr-[5%] bg-[var(--s4)] rounded-lg">
+            <p>Daftar</p>
+          </button>
+        </div>
+      </div>
     </section>
 
-    <section class="bg-[#D9D9D9] w-[20vw] h-[100vh]"></section>
+    <section
+      class="bg-[#D9D9D9] w-[60vw] h-[100vh] z-10 absolute"
+      id="slide"
+    ></section>
 
-    <section class="bg-[var(--s2)] w-[40vw] h-[100vh]">
-        <div class="w-full px-[20%] text-[1.3vw] ">
-           <div class="">
-                <div class="mb-5 text-center">
-                    <h1 class="c-f-judul text-[7vw]">Arunika</h1>
-                    <p>Setiap pakaian punya cerita.<br>Yuk, pilih cerita yang ramah lingkungan</p>
-                </div>
-                
-                <div class="mb-4">
-                    <p>Email</p>
-                    <input type="email" name="" id="" placeholder="Email@gmail.com" class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]">
-                </div>
-        
-                <div class="mb-4">
-                    <p>Kata Sandi</p>
-                    <div class="flex items-center">
-                        <input type="password" name="" id="" placeholder="Masukan Kata Sandi" class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]">
-                        <img src="public/icon-mata-tutup.png" alt="" class="w-[1.5vw] h-[1.5vw] -ml-[3vw] relative z-1">
-                    </div>
-                </div>
+    <!-- MASUK -->
+    <section class="bg-[var(--s2)] w-[40vw] h-[100vh] absolute right-0">
+      <div class="w-full px-[20%] text-[1.3vw]">
+        <div class="">
+          <div class="mb-5 text-center">
+            <h1 class="c-f-judul text-[7vw]">Arunika</h1>
+            <p>
+              Setiap pakaian punya cerita.<br />Yuk, pilih cerita yang ramah
+              lingkungan
+            </p>
+          </div>
 
-                <div class="text-[0.8vw] -mt-3 flex justify-end ">
-                    <button><u>Lupa Kata Sandi ?</u></button>
-                </div>
+          <div class="mb-4">
+            <p>Email</p>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Email@gmail.com"
+              class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]"
+            />
+          </div>
 
-                <p class="text-center text-[70%] text-gray-500">Belum Punya Akun ? <span class="text-[var(--t4)]">
-                    <a href=" "><u>Daftar</u></a>
-                </span></p>
-
-                <button class="w-full py-2 bg-[var(--p8)] text-white rounded-xl drop-shadow-lg">Masuk</button>
-        
-                <div class="my-1 grid grid-cols-3 items-center">
-                    <div class="bg-black w-100% h-[2%]"></div>
-
-                    <div>
-                        <p class="text-center text-[60%]">Atau Masuk Dengan</p>
-                    </div>
-
-                    <div class="bg-black w-100% h-[2%]"></div>
-                </div>
-                
-                
-                <button class="w-full py-2 bg-[var(--s3)] rounded-xl drop-shadow-lg flex justify-center items-center">
-                    <img src="public/icon-google.png" alt="" class="w-[1.5vw] h-[1.5vw] mr-[1vw]">
-                    Masuk dengan Google
-                </button>
-           </div>
-
-            <div class="w-full h-full mt-[30%] py-2 px-3 flex items-center justify-between bg-[var(--s3)] rounded-lg drop-shadow-lg">
-                <div class="px-[12%] py-1.5 ml-[5%] bg-[var(--s4)] rounded-lg">
-                    <p>Masuk</p>
-                </div>
-    
-                <div class="w-[0.5%] py-5 bg-gray-300">
-                    
-                </div>
-                
-                <div class="px-[12%] py-1.5 mr-[5%]">
-                    <p>Daftar</p>
-                </div>
+          <div class="mb-4">
+            <p>Kata Sandi</p>
+            <div class="flex items-center">
+              <input
+                type="password"
+                name=""
+                id=""
+                placeholder="Masukan Kata Sandi"
+                class="w-full p-2 rounded-md drop-shadow-lg bg-[var(--s3)]"
+              />
+              <img
+                src="public/icon-mata-tutup.png"
+                alt=""
+                class="w-[1.5vw] h-[1.5vw] -ml-[3vw] relative z-1"
+              />
             </div>
+          </div>
+
+          <div class="text-[0.8vw] -mt-3 flex justify-end">
+            <button><u>Lupa Kata Sandi ?</u></button>
+          </div>
+
+          <p class="text-center text-[70%] text-gray-500 pb-2">
+            Belum Punya Akun ?
+            <span class="text-[var(--t4)]">
+              <button onclick="Daftar()"><u>Daftar</u></button>
+            </span>
+          </p>
+
+          <button
+            class="w-full py-2 bg-[var(--p8)] text-white rounded-xl drop-shadow-lg"
+          >
+            Masuk
+          </button>
+
+          <div class="my-1 grid grid-cols-3 items-center">
+            <div class="bg-black w-100% h-[2%]"></div>
+
+            <div>
+              <p class="text-center text-[60%]">Atau Masuk Dengan</p>
+            </div>
+
+            <div class="bg-black w-100% h-[2%]"></div>
+          </div>
+
+          <button
+            class="w-full py-2 bg-[var(--s3)] rounded-xl drop-shadow-lg flex justify-center items-center"
+          >
+            <img
+              src="public/icon-google.png"
+              alt=""
+              class="w-[1.5vw] h-[1.5vw] mr-[1vw]"
+            />
+            Masuk dengan Google
+          </button>
         </div>
+
+        <div
+          class="w-full h-full mt-[30%] py-2 px-3 flex items-center justify-between bg-[var(--s3)] rounded-lg drop-shadow-lg"
+        >
+          <button class="px-[12%] py-1.5 ml-[5%] bg-[var(--s4)] rounded-lg">
+            <p>Masuk</p>
+          </button>
+
+          <div class="w-[0.5%] py-5 bg-gray-300"></div>
+
+          <button class="px-[12%] py-1.5 mr-[5%]" onclick="Daftar()">
+            <p>Daftar</p>
+          </button>
+        </div>
+      </div>
     </section>
-</body>
+
+    <script>
+      const Daftar = () => {
+        let nodeSlide = document.getElementById("slide");
+
+        nodeSlide.setAttribute(
+          "class",
+          "bg-[#D9D9D9] w-[60vw] h-[100vh] absolute z-10 translate-x-[40vw] duration-700"
+        );
+      };
+
+      const Masuk = () => {
+        let nodeSlide = document.getElementById("slide");
+
+        nodeSlide.setAttribute(
+          "class",
+          "bg-[#D9D9D9] w-[60vw] h-[100vh] absolute z-10 duration-700"
+        );
+      };
+    </script>
+  </body>
 </html>

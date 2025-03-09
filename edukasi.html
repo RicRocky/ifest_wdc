@@ -14,32 +14,41 @@
 
   <body class="m-0 p-0 relative">
     <!-- Header -->
-    <header class="px-3 grid grid-cols-3 bg-[var(--p1)]">
-      <div class="flex c-f1">
-        <div class="mx-3 h-full hover:bg-[var(--s1)] grid place-content-center">
-          <a href="beranda.html" class="c-f1 px-3 text-xl">Beranda</a>
-        </div>
-        <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
-          <a href="toko.html" class="c-f1 px-3 text-xl">Toko</a>
-        </div>
-        <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
-          <a href="edukasi.html" class="c-f1 px-3 text-xl">Edukasi</a>
-        </div>
-        <div class="mr-3 h-full hover:bg-[var(--s1)] grid place-content-center">
-          <a href="donasi.html" class="c-f1 px-3 text-xl">Donasi</a>
-        </div>
+    <header class="c-f1 px-3 grid max-md:grid-cols-2 md:grid-cols-3 bg-[var(--p1)]">
+      <div class="max-md:hidden flex md:z-20">
+          <a class="px-3 text-xl mx-3 h-full hover:bg-[var(--s1)] bg-[var(--s1)] grid place-content-center" href="beranda.html">
+              Beranda
+          </a>
+          <a href="toko.html" class="mr-3 h-full px-3 text-xl hover:bg-[var(--s1)] grid place-content-center">
+              Toko
+          </a>
+          <a href="edukasi.html" class="mr-3 px-3 text-xl h-full hover:bg-[var(--s1)] grid place-content-center">
+              Edukasi
+          </a>
+          <a href="donasi.html" class="mr-3 px-3 text-xl h-full hover:bg-[var(--s1)] grid place-content-center">
+              Donasi
+          </a>
       </div>
-      <div class="grid place-content-center">
-        <a href="beranda.html" class="c-f-judul p-0 m-0 text-center text-4xl"
-          >Arunika</a
-        >
+      <div class="max-md:ml-2 max-md:flex max-md:items-center md:grid md:place-content-center">
+          <!-- Hamburger Menu -->
+          <div class="md:hidden hover:bg-[var(--s1)] mr-5 py-2 px-4 cursor-pointer active:bg-blue h-full gird place-content-center" onclick="Buka()">
+              <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
+              <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
+              <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
+          </div>
+          <!-- Hamburger Menu -->
+          <a href="beranda.html" class="c-f-judul max-md:py-2 p-0 m-0 text-center text-4xl">Arunika</a>
       </div>
       <div class="flex items-center justify-end">
-        <img src="public/cart.png" class="mr-6 h-[1.5vw]" />
-        <img src="public/profile.png" class="mr-6 h-[1.5vw]" />
+          <div class="mr-3 px-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+              <a href="keranjang.html"><img src="public/cart.png" class=" max-md:w-[20px] md:w-[25px]"></a>
+          </div>
+          <div class="mr-3 px-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+              <a href="login.html"><img src="public/profile.png" class="max-md:h-[20px] md:h-[25px] hover:bg-[var(--s1)]"></a>
+          </div>
       </div>
-    </header>
-    <!-- Header -->
+  </header>
+  <!-- Header -->
 
     <section class="bg-[var(--s2)] c-f1">
       <!-- HEADER EDUKASI -->
@@ -155,33 +164,34 @@
           >
             Pakai baju bekas bisa <br><b>kurangi emisi karbon</b>
           </p>
-
-          <div>
-            <img
-              src="public/thrifting.png"
-              alt=""
-              class="w-[50vw] inline-block"
-            />
-          </div>
-
-          <div>
-            <img
-              src="public/arrow.png"
-              alt=""
-              class="w-[10%] rotate-90 inline-block -mt-[2%]"
-            />
-          </div>
-
-          <div>
-            <img
-              src="public/co2.png"
-              alt=""
-              class="w-[40vw] inline-block -mt-[7%]"
-            />
+          <div class="md:flex md:px-[10vw]">
+            <div>
+              <img
+                src="public/thrifting.png"
+                alt=""
+                class="w-[50vw] inline-block"
+              />
+            </div>
+  
+            <div>
+              <img
+                src="public/arrow.png"
+                alt=""
+                class="w-[10%] rotate-90 inline-block -mt-[2%] md:rotate-0 md:mt-0 md:w-[10vw] md:mt-[8vw]"
+              />
+            </div>
+  
+            <div>
+              <img
+                src="public/co2.png"
+                alt=""
+                class="w-[40vw] inline-block -mt-[7%] md:-mt-[5vw]"
+              />
+            </div>
           </div>
 
           <p
-            class="leading-none pb-[3%] md:pb-[10%] -mt-[3%] text-[7vw] md:text-[5vw] text-right pr-[10vw] md:-mt-[20vw] md:pr-10"
+            class="leading-none pb-[3%] md:pb-[10%] -mt-[3%] text-[7vw] md:text-[5vw] text-right pr-[10vw] md:pr-[15vw]"
           >
             hingga <b>30%.</b><br>Keren, kan?
           </p>
@@ -189,7 +199,7 @@
       </div>
 
       <!-- TRANSISI -->
-      <div class="relative bg-blue-500 h-[13vw]">
+      <div class="relative h-[12vw]">
         <img
           src="public/transisi-fakta-unik.png"
           alt=""
