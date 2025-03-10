@@ -52,7 +52,7 @@
     <!-- Pop Hamburger Menu -->
 
     <!-- Header -->
-    <header class="fixed drop-shadow-md h-[45px] w-screen z-30 c-f1 px-3 grid max-md:grid-cols-2 md:grid-cols-3 bg-[var(--p1)]">
+    <header class="fixed drop-shadow-md w-screen z-30 c-f1 px-3 grid max-md:grid-cols-2 md:grid-cols-3 bg-[var(--p1)]">
         <div class="max-md:hidden flex md:z-20">
             <a class="px-3 text-xl mx-3 h-full hover:bg-[var(--s1)] bg-[var(--s1)] grid place-content-center" href="index.html">
                 Beranda
@@ -89,7 +89,7 @@
     <!-- Header -->
 
     <!-- Content -->
-    <div class="w-screen pt-[9vh] py-1 bg-[var(--black)] flex items-center overflow-x-hidden">
+    <div class="w-screen pt-[11vh] py-1 bg-[var(--black)] flex items-center overflow-x-hidden">
         <img src="public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 max-md:w-[5%] md:w-[2%]">
         <div class="pb-1 relative grid place-content-center">
             <input type="text" class="c-f1 outline-none max-md:w-[50vw] md:w-[35vw] bg-[var(--black)] outline-[0] text-white"
@@ -150,7 +150,7 @@
                     <img class="w-[80%]" src="public/Kurang.png" alt="">
                 </div>
                 <p class="mx-4 c-f1 text-[4vw]">1</p>
-                <div class="max-md:w-[3.4vw] max-md:h-[3.4vw] bg-[var(--n5)] rounded-[50%] flex items-center justify-center">
+                <div class="max-md:w-[3.4vw] max-md:h-[3.4vw] md:w-[1.8vw] md:h-[1.8vw] bg-[var(--n5)] rounded-[50%] flex items-center justify-center">
                     <img class="w-[80%]" src="public/Tambah.png" alt="">
                 </div>
             </div>
@@ -162,38 +162,49 @@
 
     <div class="h-[3px]"></div>
     
-    <div class="c-f1 bg-white flex justify-end items-center">
-        <img class="h-[40%]" src="public/icon-coupon.png" alt="">
-        <p class="mx-3 text-[2vw]">Kupon: </p>
-        <div class="w-[30%]">
-            <div class="relative">
-                <h5 class="c-f1 m-0 py-0 px-2 font-bold text-[1.8vw] bg-[var(--t2)] rounded-xs relative z-[2]">
-                    Diskon 70%
-                </h5>
-                <img src="public/thunder.png" class="w-[14%] left-[-0.8vw] top-[-7px] z-[10] absolute">
+    <div class="c-f1 bg-white grid grid-cols-6 place-content-center">
+        <div class="grid col-start-4">
+            <div class="flex items-center">
+                <img class="w-[2vw] h-[2vw]" src="public/icon-coupon.png" alt="">
+                <p class="mx-3 text-[2.3vw]">Kupon: </p>
             </div>
         </div>
-        <p class="text-[1.3vw] underline text-[var(--p8)]">Ubah Voucher</p>
+        <div class="relative py-2">
+            <div class="c-f1 px-2 font-semibold max-md:text-[2.3vw] md:text-[1.4vw] bg-[var(--t2)] rounded-xs relative z-[2]">
+                <h1>Diskon 70%</h1>
+            </div>
+            <img src="public/thunder.png" class="w-[7%] max-md:left-[-3px] md:left-[-4px] max-md:top-[6px] md:top-[5px] z-[10] absolute">
+        </div>
+        <div class="flex items-center">
+            <p class="ml-2 max-md:text-[2vw] md:text-[1.4vw] underline text-[var(--p8)]">Ganti Voucher</p>
+        </div>
     </div>
 
     <div class="h-[3px]"></div>
-    <div class="grid grid-cols-5 c-f1 h-[4vw] bg-white">
-        <div class="col-start-4 col-span-2 h-[4vw] flex items-center">
-            <img class="h-[40%] " src="public/icon-truck.png" alt="">
-            <p class="mx-3 text-[2vw] w-[35%]">Jenis Pengiriman: </p>
-            <div class="w-[30%] flex items-center">
-                <p class="text-[2vw] mr-2">Hemat</p>
-                <p class="text-[1.3vw] underline text-[var(--p8)]">Ubah</p>
+
+    <div class="c-f1 bg-white grid grid-cols-6 place-content-center">
+        <div class="grid col-start-4">
+            <div class="flex items-center">
+                <img class="h-[2vw] w-[2vw] " src="public/icon-truck.png" alt="">
+                <p class="mx-3 text-[2.3vw] w-100%">Jenis Pengiriman: </p>
             </div>
-            <p class="text-[2vw]">Rp10.000</p>
+        </div>
+        <div class="relative py-2 max-md:text-[2vw] md:text-[1.4vw] ">
+            <div class="flex items-center justify-center mr-">
+                <h1 class="">Hemat</h1>
+                <p class="ml-2 underline text-[var(--p8)]">Ubah</p>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <p class="mx-3 text-[2.3vw]">Rp10.000</p>
         </div>
     </div>
 
     <div class="h-[3px]"></div>
     <div class="grid grid-cols-2 c-f1 h-[4vw] bg-white px-[3.5vw]">
-        <div class="flex items-center">
-            <p class="mr-3 text-[2vw]">Pesan: </p>
-            <input class="h-[2.5vw] w-[50%] bg-[var(--p1)] p-3 rounded-md" type="text"
+        <div class="flex items-center text-[2vw]">
+            <p class="mr-3 ">Pesan: </p>
+            <input class="w-[50%] bg-[var(--p1)] px-2 rounded-md" type="text"
                 placeholder="(Optional) Tinggalkan Pesan untuk toko">
         </div>
         <div class="col-start-2 flex items-center justify-end text-[2vw]">
@@ -203,13 +214,14 @@
     <!-- checkout -->
     <!-- Bayar -->
     <div class="h-[1vw]"></div>
+
     <div class="grid grid-cols-2 c-f1 h-[4vw] bg-white px-[3.5vw] place-content-center">
         <p class="mr-3 text-[2vw]">Koin Aru </p>
         <div class="flex items-center justify-end">
             <p class="text-[2vw] mr-3">20.000</p>
             <label class="relative inline-flex items-center cursor-pointer">
                 <input type="checkbox" class="sr-only peer" id="toggleSwitch">
-                <div class="w-[3.52vw] h-[1.9vw] bg-gray-300 peer-focus:ring-green-300 rounded-full 
+                <div class="max-md:w-[2vw] max-fase h-2vw md:w-[3.52vw] md:h-[1.9vw] bg-gray-300 peer-focus:ring-green-300 rounded-full 
                     peer-checked:after:translate-x-5 peer-checked:after:border-white after:absolute 
                     after:top-0.5 after:left-0.5 after:bg-white after:border-gray-300 after:border after:rounded-full 
                     after:h-5 after:w-5 after:transition-all peer-checked:bg-green-500">
@@ -236,13 +248,13 @@
         <p class="m-5 mr-[4.5%]">Rp40.000<br>Rp10.000<br>Rp1.000<br>-Rp20.000<br>-Rp4.000</p>
     </div>
     <div class="h-[3px]"></div>
-    <div class="h-[5vw] bg-white c-f1 flex justify-end items-center text-[2.3vw]">
+    <div class="h-[5vw] mb-[40px] bg-white c-f1 flex justify-end items-center text-[2.3vw]">
         <p class="px-[3.5vw]">Total Pembayaran: <span class="font-bold text-[var(--t8)]">Rp46.000</span></p>
     </div>
 
-    <div class="p-2 w-screen fixed bottom-[0] bg-[var(--black)] flex justify-end items-center">
+    <div class="c-f1 p-1 w-screen h-[40px] fixed bottom-[0] bg-[var(--black)] flex justify-end items-center">
         <button class="py-1 px-10 bg-[var(--t10)] rounded-md mr-5">Batal</button>
-        <button class="py-1 px-20 mr-5 bg-[var(--p1)] rounded-md">Buat Pesanan</button>
+        <button class="py-1 max-md:px-10 md:px-20 mr-5 bg-[var(--p1)] rounded-md">Buat Pesanan</button>
     </div>
 </body>
 <script>
