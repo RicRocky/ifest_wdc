@@ -1,1792 +1,2008 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IFEST - WDC</title>
 
-    <!-- Import Tailwindcss -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IFEST - WDC</title>
 
-    <!-- Import VI -->
-    <link rel="stylesheet" href="../css/vi.css" />
+  <!-- Import Tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Import Carousel -->
-    <link rel="stylesheet" href="css/carousel.css" />
-  </head>
-  <body class="m-0 p-0 relative bg-[var(--p2)] overflow-x-hidden">
-    <!-- Pop Hamburger Menu -->
-    <div
-      class="c-f1 hidden h-screen max-sm:w-[55vw] max-md:w-[40vw] bg-[var(--p4)] absolute z-40 resize-x overflow-auto"
-      id="silang"
-      onclick="Tutup()"
-    >
-      <div class="flex justify-end">
-        <img src="public/tutup.png" class="cursor-pointer mt-2 mr-2 w-[25px]" />
+  <!-- Import VI -->
+  <link rel="stylesheet" href="../css/vi.css" />
+
+  <!-- Import Carousel -->
+  <link rel="stylesheet" href="css/carousel.css" />
+</head>
+
+<body class="m-0 p-0 relative bg-[var(--p2)] overflow-x-hidden">
+  <!-- Pop Hamburger Menu -->
+  <div class="c-f1 hidden h-screen max-sm:w-[55vw] max-md:w-[40vw] bg-[var(--p4)] absolute z-40 resize-x overflow-auto"
+    id="silang" onclick="Tutup()">
+    <div class="flex justify-end">
+      <img src="public/tutup.png" class="cursor-pointer mt-2 mr-2 w-[25px]" />
+    </div>
+    <div class="mt-[2vw] text-center">
+      <a href="beranda.html" class="c-f-judul max-md:py-2 p-0 m-0 text-center text-4xl">Arunika</a>
+      <p class="max-md:px-2 max-sm:px-5 max-sm:text-sm">
+        “Setiap pakaian punya cerita. Pilihlah cerita yang ramah lingkungan"
+      </p>
+    </div>
+    <div class="mt-5">
+      <a class="mt-2 hover:bg-[var(--s1)] bg-[var(--s1)] grid place-content-center text-xl" href="beranda.html">
+        Beranda
+      </a>
+      <a href="toko.html" class="mt-2 text-xl hover:bg-[var(--s1)] grid place-content-center">
+        Toko
+      </a>
+      <a href="edukasi.html" class="mt-3 text-xl hover:bg-[var(--s1)] grid place-content-center">
+        Edukasi
+      </a>
+      <a href="donasi.html" class="mt-3 hover:bg-[var(--s1)] grid place-content-center text-xl">
+        Donasi
+      </a>
+    </div>
+  </div>
+  <!-- Pop Hamburger Menu -->
+
+  <!-- Header -->
+  <header class="c-f1 px-3 grid max-md:grid-cols-2 md:grid-cols-3 bg-[var(--p1)]">
+    <div class="max-md:hidden flex md:z-20">
+      <a class="px-3 text-xl mx-3 h-full hover:bg-[var(--s1)] bg-[var(--s1)] grid place-content-center"
+        href="beranda.html">
+        Beranda
+      </a>
+      <a href="toko.html" class="mr-3 h-full px-3 text-xl hover:bg-[var(--s1)] grid place-content-center">
+        Toko
+      </a>
+      <a href="edukasi.html" class="mr-3 px-3 text-xl h-full hover:bg-[var(--s1)] grid place-content-center">
+        Edukasi
+      </a>
+      <a href="donasi.html" class="mr-3 px-3 text-xl h-full hover:bg-[var(--s1)] grid place-content-center">
+        Donasi
+      </a>
+    </div>
+    <div class="max-md:ml-2 max-md:flex max-md:items-center md:grid md:place-content-center">
+      <!-- Hamburger Menu -->
+      <div
+        class="md:hidden hover:bg-[var(--s1)] mr-5 py-2 px-4 cursor-pointer active:bg-blue h-full gird place-content-center"
+        onclick="Buka()">
+        <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
+        <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
+        <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
       </div>
-      <div class="mt-[2vw] text-center">
-        <a
-          href="beranda.html"
-          class="c-f-judul max-md:py-2 p-0 m-0 text-center text-4xl"
-          >Arunika</a
-        >
-        <p class="max-md:px-2 max-sm:px-5 max-sm:text-sm">
-          “Setiap pakaian punya cerita. Pilihlah cerita yang ramah lingkungan"
+      <!-- Hamburger Menu -->
+      <a href="beranda.html" class="c-f-judul max-md:py-2 p-0 m-0 text-center text-4xl">Arunika</a>
+    </div>
+    <div class="flex items-center justify-end">
+      <div class="mr-3 px-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+        <a href="keranjang.html"><img src="public/cart.png" class="max-md:w-[20px] md:w-[25px]" /></a>
+      </div>
+      <div class="mr-3 px-3 h-full hover:bg-[var(--s1)] grid place-content-center">
+        <a href="login.html"><img src="public/profile.png"
+            class="max-md:h-[20px] md:h-[25px] hover:bg-[var(--s1)]" /></a>
+      </div>
+    </div>
+  </header>
+  <!-- Header -->
+
+  <!-- Content -->
+  <div class="w-screen h-[6vh] bg-[var(--black)] flex items-center overflow-x-hidden">
+    <img src="../public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 w-[2%]" />
+    <div class="pb-1 relative grid place-content-center">
+      <input type="text" class="c-f2 w-[35vw] bg-[var(--black)] outline-[0] text-white"
+        placeholder="Cari Baju, Aksesoris dan barang-barang menarik lainnya" />
+      <div class="w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"></div>
+    </div>
+  </div>
+
+  <!-- Judul -->
+  <div class="bg-[url(../public/baju.jpeg)] bg-cover h-[40vw] lg:h-[40vh] w-full mb-12">
+    <h1
+      class="h-[40vw] lg:h-[40vh] w-[100vw] grid place-content-center backdrop-blur-md text-center c-f2 font-semibold text-[10vw] md:text-[8vw] text-white drop-shadow-md">
+      Pakaian Pria
+    </h1>
+  </div>
+  <!-- judul -->
+
+  <div
+    class="pl-10 my-4 flex c-f1 text-[5.5vw] md:text-[3vw] lg:text-[2vw] leading-none w-[100%] overflow-x-auto overflow-y-hidden scroll-none scroll-smooth">
+    <div class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]">
+      <div class="grid place-content-center">
+        <div class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]">
+          <img class="rounded-full"
+            src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/4/14/b28dc7c8-5ec5-4aa1-b585-b50f4b25aed5.png"
+            alt="" />
+        </div>
+      </div>
+      <p class="text-center">Promo</p>
+    </div>
+    <div class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]">
+      <div class="grid place-content-center">
+        <div class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]">
+          <img class="rounded-full w-f"
+            src="https://down-id.img.susercontent.com/file/id-11134207-7r98z-ly7z8il72ujsa8@resize_w900_nl.webp"
+            alt="" />
+        </div>
+      </div>
+      <p class="text-center">Pakaian Wanita</p>
+    </div>
+    <div class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]">
+      <div class="grid place-content-center">
+        <div class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]">
+          <img class="rounded-full"
+            src="https://down-id.img.susercontent.com/file/id-11134207-7rasl-m0dx9uwhkmq4e1@resize_w900_nl.webp"
+            alt="" />
+        </div>
+      </div>
+      <p class="text-center">Pakaian Pria</p>
+    </div>
+    <div class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]">
+      <div class="grid place-content-center">
+        <div class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]">
+          <img class="rounded-full"
+            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4rbvtka7jp43d.webp" alt="" />
+        </div>
+      </div>
+      <p class="text-center">Bawahan Wanita</p>
+    </div>
+    <div class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]">
+      <div class="grid place-content-center">
+        <div class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]">
+          <img class="rounded-full"
+            src="https://down-id.img.susercontent.com/file/id-11134207-7rasa-m1f4p0tuy57rd2@resize_w900_nl.webp"
+            alt="" />
+        </div>
+      </div>
+      <p class="text-center">Bawahan Pria</p>
+    </div>
+    <div class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]">
+      <div class="grid place-content-center">
+        <div class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]">
+          <img class="rounded-full"
+            src="https://down-id.img.susercontent.com/file/id-11134207-7rbke-m70btgz063c140@resize_w900_nl.webp"
+            alt="" />
+        </div>
+      </div>
+      <p class="text-center">Pakaian Muslim</p>
+    </div>
+    <div class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]">
+      <div class="grid place-content-center">
+        <div class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]">
+          <img class="rounded-full"
+            src="https://down-id.img.susercontent.com/file/sg-11134201-23010-4qz7knon5fmvbd@resize_w900_nl.webp"
+            alt="" />
+        </div>
+      </div>
+      <p class="text-center">Dress</p>
+    </div>
+    <div class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]">
+      <div class="grid place-content-center">
+        <div class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]">
+          <img class="rounded-full"
+            src="https://down-id.img.susercontent.com/file/id-11134207-7rbke-m6kvjbx8d7hmd0.webp" alt="" />
+        </div>
+      </div>
+      <p class="text-center">Aksesoris</p>
+    </div>
+    <div class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]">
+      <div class="grid place-content-center">
+        <div class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]">
+          <img class="rounded-full"
+            src="https://down-id.img.susercontent.com/file/id-11134207-7rasg-m0mq0e4tmxos4b.webp" alt="" />
+        </div>
+      </div>
+      <p class="text-center">Lainnya</p>
+    </div>
+  </div>
+
+  <div class="p-4 flex justify-center flex-wrap">
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
         </p>
       </div>
-      <div class="mt-5">
-        <a
-          class="mt-2 hover:bg-[var(--s1)] bg-[var(--s1)] grid place-content-center text-xl"
-          href="beranda.html"
-        >
-          Beranda
-        </a>
-        <a
-          href="toko.html"
-          class="mt-2 text-xl hover:bg-[var(--s1)] grid place-content-center"
-        >
-          Toko
-        </a>
-        <a
-          href="edukasi.html"
-          class="mt-3 text-xl hover:bg-[var(--s1)] grid place-content-center"
-        >
-          Edukasi
-        </a>
-        <a
-          href="donasi.html"
-          class="mt-3 hover:bg-[var(--s1)] grid place-content-center text-xl"
-        >
-          Donasi
-        </a>
-      </div>
-    </div>
-    <!-- Pop Hamburger Menu -->
-
-    <!-- Header -->
-    <header
-      class="c-f1 px-3 grid max-md:grid-cols-2 md:grid-cols-3 bg-[var(--p1)]"
-    >
-      <div class="max-md:hidden flex md:z-20">
-        <a
-          class="px-3 text-xl mx-3 h-full hover:bg-[var(--s1)] bg-[var(--s1)] grid place-content-center"
-          href="beranda.html"
-        >
-          Beranda
-        </a>
-        <a
-          href="toko.html"
-          class="mr-3 h-full px-3 text-xl hover:bg-[var(--s1)] grid place-content-center"
-        >
-          Toko
-        </a>
-        <a
-          href="edukasi.html"
-          class="mr-3 px-3 text-xl h-full hover:bg-[var(--s1)] grid place-content-center"
-        >
-          Edukasi
-        </a>
-        <a
-          href="donasi.html"
-          class="mr-3 px-3 text-xl h-full hover:bg-[var(--s1)] grid place-content-center"
-        >
-          Donasi
-        </a>
-      </div>
-      <div
-        class="max-md:ml-2 max-md:flex max-md:items-center md:grid md:place-content-center"
-      >
-        <!-- Hamburger Menu -->
-        <div
-          class="md:hidden hover:bg-[var(--s1)] mr-5 py-2 px-4 cursor-pointer active:bg-blue h-full gird place-content-center"
-          onclick="Buka()"
-        >
-          <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
-          <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
-          <div class="mt-1 h-[3px] w-[20px] bg-[var(--p6)] rounded-md"></div>
-        </div>
-        <!-- Hamburger Menu -->
-        <a
-          href="beranda.html"
-          class="c-f-judul max-md:py-2 p-0 m-0 text-center text-4xl"
-          >Arunika</a
-        >
-      </div>
-      <div class="flex items-center justify-end">
-        <div
-          class="mr-3 px-3 h-full hover:bg-[var(--s1)] grid place-content-center"
-        >
-          <a href="keranjang.html"
-            ><img src="public/cart.png" class="max-md:w-[20px] md:w-[25px]"
-          /></a>
-        </div>
-        <div
-          class="mr-3 px-3 h-full hover:bg-[var(--s1)] grid place-content-center"
-        >
-          <a href="login.html"
-            ><img
-              src="public/profile.png"
-              class="max-md:h-[20px] md:h-[25px] hover:bg-[var(--s1)]"
-          /></a>
-        </div>
-      </div>
-    </header>
-    <!-- Header -->
-
-    <!-- Content -->
-    <div
-      class="w-screen h-[6vh] bg-[var(--black)] flex items-center overflow-x-hidden"
-    >
-      <img
-        src="../public/icon-search.png"
-        alt="Icon Search"
-        class="ml-3 mr-2 w-[2%]"
-      />
-      <div class="pb-1 relative grid place-content-center">
-        <input
-          type="text"
-          class="c-f2 w-[35vw] bg-[var(--black)] outline-[0] text-white"
-          placeholder="Cari Baju, Aksesoris dan barang-barang menarik lainnya"
-        />
-        <div
-          class="w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"
-        ></div>
-      </div>
-    </div>
-
-    <!-- Judul -->
-    <div class="bg-[url(../public/baju.jpeg)] bg-cover h-[40vw] lg:h-[40vh] w-full mb-12">
-      <h1
-        class="h-[40vw] lg:h-[40vh] w-[100vw] grid place-content-center backdrop-blur-md text-center c-f2 font-semibold text-[10vw] md:text-[8vw] text-white drop-shadow-md"
-      >
-        Pakaian Pria
-      </h1>
-    </div>
-    <!-- judul -->
-
-    <div
-      class="pl-10 my-4 flex c-f1 text-[5.5vw] md:text-[3vw] lg:text-[2vw] leading-none w-[100%] overflow-x-auto overflow-y-hidden scroll-none scroll-smooth"
-    >
-      <div
-        class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]"
-      >
-        <div class="grid place-content-center">
-          <div
-            class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]"
-          >
-            <img
-              class="rounded-full"
-              src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/4/14/b28dc7c8-5ec5-4aa1-b585-b50f4b25aed5.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="text-center">Promo</p>
-      </div>
-      <div
-        class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]"
-      >
-        <div class="grid place-content-center">
-          <div
-            class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]"
-          >
-            <img
-              class="rounded-full w-f"
-              src="https://down-id.img.susercontent.com/file/id-11134207-7r98z-ly7z8il72ujsa8@resize_w900_nl.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="text-center">Pakaian Wanita</p>
-      </div>
-      <div
-        class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]"
-      >
-        <div class="grid place-content-center">
-          <div
-            class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]"
-          >
-            <img
-              class="rounded-full"
-              src="https://down-id.img.susercontent.com/file/id-11134207-7rasl-m0dx9uwhkmq4e1@resize_w900_nl.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="text-center">Pakaian Pria</p>
-      </div>
-      <div
-        class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]"
-      >
-        <div class="grid place-content-center">
-          <div
-            class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]"
-          >
-            <img
-              class="rounded-full"
-              src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4rbvtka7jp43d.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="text-center">Bawahan Wanita</p>
-      </div>
-      <div
-        class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]"
-      >
-        <div class="grid place-content-center">
-          <div
-            class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]"
-          >
-            <img
-              class="rounded-full"
-              src="https://down-id.img.susercontent.com/file/id-11134207-7rasa-m1f4p0tuy57rd2@resize_w900_nl.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="text-center">Bawahan Pria</p>
-      </div>
-      <div
-        class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]"
-      >
-        <div class="grid place-content-center">
-          <div
-            class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]"
-          >
-            <img
-              class="rounded-full"
-              src="https://down-id.img.susercontent.com/file/id-11134207-7rbke-m70btgz063c140@resize_w900_nl.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="text-center">Pakaian Muslim</p>
-      </div>
-      <div
-        class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]"
-      >
-        <div class="grid place-content-center">
-          <div
-            class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]"
-          >
-            <img
-              class="rounded-full"
-              src="https://down-id.img.susercontent.com/file/sg-11134201-23010-4qz7knon5fmvbd@resize_w900_nl.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="text-center">Dress</p>
-      </div>
-      <div
-        class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]"
-      >
-        <div class="grid place-content-center">
-          <div
-            class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]"
-          >
-            <img
-              class="rounded-full"
-              src="https://down-id.img.susercontent.com/file/id-11134207-7rbke-m6kvjbx8d7hmd0.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="text-center">Aksesoris</p>
-      </div>
-      <div
-        class="grid place-content-center w-full h-full mr-[10vw] md:mr-[6vw] lg:mr-[3vw]"
-      >
-        <div class="grid place-content-center">
-          <div
-            class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] lg:w-[7vw] lg:h-[7vw] rounded-[50%] bg-[var(--black)]"
-          >
-            <img
-              class="rounded-full"
-              src="https://down-id.img.susercontent.com/file/id-11134207-7rasg-m0mq0e4tmxos4b.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="text-center">Lainnya</p>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
       </div>
     </div>
 
-    <div class="p-4 flex justify-center flex-wrap">
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
       </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4bxtsk1oo7b0f@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
         </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp28.000</p>
-        </div>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
       </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul4-li9m6qukml9da7@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4bxtsk1oo7b0f@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp28.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4bxtsk1oo7b0f@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp28.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4bxtsk1oo7b0f@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp28.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul4-li9m6qukml9da7@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4bxtsk1oo7b0f@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp28.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul4-li9m6qukml9da7@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4bxtsk1oo7b0f@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp28.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul4-li9m6qukml9da7@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4bxtsk1oo7b0f@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp28.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul4-li9m6qukml9da7@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul4-li9m6qukml9da7@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4bxtsk1oo7b0f@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp28.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul4-li9m6qukml9da7@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m4bxtsk1oo7b0f@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Rajut Wanita Eira Oversize /Atasan rajut wanita all
-          size/sweater rajut wanita
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp28.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/f9a2acfb6de0900f670e86217d770994@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Baju Renang Wanita Dewasa/Baju Renang Perempuan Model lis Motif
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
-        </div>
-      </div>
-
-      <div
-        class="w-[120px] sm:w-[160px] mx-3 my-3 cursor-pointer"
-        onclick="PindahDetail()"
-      >
-        <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
-          <img
-            src="https://down-id.img.susercontent.com/file/id-11134207-7qul9-li4yu8anqvsa57@resize_w900_nl.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid grid-cols-2 text-center items-center">
-          <p
-            class="c-f1 font-bold ml-1 mr-2 p-2 max-md:p-1.5 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] text-[1.8vw] max-md:text-[1.2vw] md:text-[1.2vw] lg:text-[1vw] xl:text-[0.5vw]"
-          >
-            Gratis Ongkir
-          </p>
-          <p
-            class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs"
-          >
-            Terjamin
-          </p>
-        </div>
-        <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden">
-          Sweater Crop Turtleneck OAKLAND 1987 Fleece (LD 110, P 43)
-        </p>
-        <div class="c-f1 flex items-center justify-between font-semibold">
-          <p class="p-0 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
-        </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
       </div>
     </div>
-  </body>
-  <script>
-    const Tutup = () => {
-      let nodeSilang = document.getElementById("silang");
 
-      nodeSilang.setAttribute("class", "hidden");
-    };
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
 
-    const Buka = () => {
-      let nodeSilang = document.getElementById("silang");
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
 
-      nodeSilang.setAttribute(
-        "class",
-        "c-f1 h-screen max-sm:w-[55vw] max-md:w-[40vw] bg-[var(--p4)] absolute z-40 resize-x overflow-auto"
-      );
-    };
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
 
-    const PindahDetail = () => window.location.replace("../detail.html");
-  </script>
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m3rf7sroctei56.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        T-shirt Pakaian Baju Kaos Oversize Pria Hitam Putih Dewasa Distro Original Lengan Pendek Keren Premium C161
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp30.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lv7i5ugivcjh33.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Rizgo Polo Shirt polos Terkeren T-Shirt Baju Santai Baju Kerja Baju Kerah Abu Solid Brand Quality
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp17.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasi-m12npn22jd91a2.webp" alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        3Second Kaos Pria Katun Lengan Pendek Line Script OL-C431223
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp20.000</p>
+      </div>
+    </div>
+
+    <div class="w-[120px] sm:w-[160px] mx-3 my-3 rounded-md cursor-pointer bg-white" onclick="PindahDetail()">
+      <div class="w-[120px] h-[120px] sm:h-[160px] sm:w-[160px]">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lzltp1zgik0rd7@resize_w900_nl.webp"
+          alt="" />
+      </div>
+      <div class="grid grid-cols-2 text-center items-center">
+        <p
+          class="c-f1 font-bold ml-1 max-md:mr-1 md:mr-2 max-md:py-2 max-md:px-1 md:p-1 rounded-md bg-[var(--black)] text-[var(--white)] max-md:text-[1.4vw] md:text-xs">
+          Gratis Ongkir
+        </p>
+        <p class="c-f1 font-bold mr-2 mt-1 mb-1 p-1 px-2 rounded-md bg-[var(--p1)] text-xs">
+          Terjamin
+        </p>
+      </div>
+      <p class="c-f2 w-full text-ellipsis whitespace-nowrap overflow-hidden px-2">
+        Thad Grond - Polo Shirt Pria logo Perisai Burung Pdf Baju Kerah Baju keren Cotton100% Original
+      </p>
+      <div class="c-f1 flex items-center justify-between font-semibold">
+        <p class="px-2 m-0 mr-1 text-2xl text-[var(--t3)]">Rp18.000</p>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+<script>
+  const Tutup = () => {
+    let nodeSilang = document.getElementById("silang");
+
+    nodeSilang.setAttribute("class", "hidden");
+  };
+
+  const Buka = () => {
+    let nodeSilang = document.getElementById("silang");
+
+    nodeSilang.setAttribute(
+      "class",
+      "c-f1 h-screen max-sm:w-[55vw] max-md:w-[40vw] bg-[var(--p4)] absolute z-40 resize-x overflow-auto"
+    );
+  };
+
+  const PindahDetail = () => window.location.replace("../detail.html");
+</script>
+
 </html>
