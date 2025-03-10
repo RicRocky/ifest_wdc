@@ -65,3 +65,9 @@
 .c-f3{
     font-family: var(--f3);
 }
+
+/* CLASS tambahan */
+
+.scroll-none {
+    scrollbar-width: none;
+}
