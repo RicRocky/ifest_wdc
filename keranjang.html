@@ -107,35 +107,35 @@
     <!-- Judul -->
 
     <!-- Header Keranjang -->
-    <div class="grid grid-cols-7 h-[4vw] bg-[var(--p4)]">
+    <div class="grid grid-cols-7 bg-[var(--p4)]">
         <div class="flex items-center">
             <input class="w-[50%] h-[50%]" type="checkbox" name="" id="">
-            <h1 class="c-f1 text-[2vw] grid place-content-center">Produk</h1>
+            <h1 class="c-f1 max-md:text-[3vw] md:text-[2vw] grid place-content-center">Produk</h1>
         </div>
         <div class="col-start-5 place-content-center">
-            <h1 class="c-f1 text-[2vw] grid place-content-center">Jumlah</h1>
+            <h1 class="c-f1 max-md:text-[3vw] md:text-[2vw] grid place-content-center">Jumlah</h1>
         </div>
         <div class="col-start-6 place-content-center">
-            <h1 class="c-f1 text-[2vw] grid place-content-center">Harga</h1>
+            <h1 class="c-f1 max-md:text-[3vw] md:text-[2vw] grid place-content-center">Harga</h1>
         </div>
         <div class="col-start-7 place-content-center">
-            <h1 class="c-f1 text-[2vw] grid place-content-center">Aksi</h1>
+            <h1 class="c-f1 max-md:text-[3vw] md:text-[2vw] grid place-content-center">Aksi</h1>
         </div>
     </div>
     <!-- Header keranjang -->
 
     <!-- Keranjang -->
     <div class="h-[1.5vw]"></div>
-    <div class="grid grid-cols-7 h-[12vw] bg-white">
+    <div class="grid grid-cols-7  bg-white" id="item1">
         <div class="flex w-[45vw] col-span-2">
             <input class="w-[14%] h-[14%] mt-3" type="checkbox" name="" id="">
-            <div class="flex items-center">
-                <div class="mx-6 w-[110px] h-[110px] bg-black"></div>
+            <div class="flex items-center ">
+                <div class="max-sm:mx-0 max-sm:ml-1 mx-6 w-[15vw] h-[15vw] bg-black"></div>
             </div>
         </div>
         <div class="col-span-2 w-[90%] py-4 ml-[-2vw]">
             <div>
-                <p class="c-f2 text-[1.4vw] w-[80%] line-clamp">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage
+                <p class="c-f2 max-sm:text-[2.5vw] max-md:text-[2vw] max-lg:text-[1.6vw] max-md:w-[80%] md:w-[90%] line-clamp">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage
                     Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
             </div>
             <div class="flex">
@@ -147,35 +147,35 @@
         </div>
         <div class="grid place-content-center">
             <div class="flex items-center">
-                <div class="w-[1.8vw] h-[1.8vw] bg-black rounded-[50%] flex items-center justify-center">
+                <div class="w-[1.8vw] h-[1.8vw] bg-black rounded-[50%] flex items-center justify-center cursor-pointer" onclick="Kurang()">
                     <img class="w-[80%]" src="public/Kurang.png" alt="">
                 </div>
-                <p class="mx-4 c-f1 text-[3vw]">1</p>
-                <div class="w-[1.8vw] h-[1.8vw] bg-[var(--n5)] rounded-[50%] flex items-center justify-center">
+                <p class="mx-4 c-f1 text-[3vw]" id="jumlah">1</p>
+                <div class="w-[1.8vw] h-[1.8vw] bg-[var(--n5)] rounded-[50%] flex items-center justify-center cursor-pointer" onclick="Tambah()">
                     <img class="w-[80%]" src="public/Tambah.png" alt="">
                 </div>
             </div>
         </div>
         <div class="grid place-content-center">
-            <h1 class="c-f1 text-[2.3vw] text-[var(--t8)] grid place-content-center">Rp40.000</h1>
+            <h1 class="c-f1 max-md:text-[3.5vw] md:text-[2.3vw] text-[var(--t8)] grid place-content-center">Rp40.000</h1>
         </div>
-        <div class="grid place-content-center">
+        <div class="grid place-content-center cursor-pointer" onclick="Hapus()">
             <img class="w-[3vw]" src="public/icon-Trash.png" alt="">
         </div>
     </div>
 
     <div class="h-[0.8vw]"></div>
     <div class="h-[6vw] bg-white flex items-center">
-        <img class="w-[4vw] h-[4vw] m-5" src="public/icon-truck.png" alt="">
-        <div class="ml-5">
-            <p class="c-f2 text-[var(--n5)] text-[1.3vw]">Gratis Ongkir s/d Rp40.000 dengan min. belanja Rp0; Gratis Ongkir s/d Rp300.000 dengan min. belanja Rp100.000</p>
+        <img class="max-md:w-[10vw] max-md:h-[10vw] md:w-[4vw] md:h-[4vw] max-md:ml-5 md:m-5" src="public/icon-truck.png" alt="" >
+        <div class="max-md:ml-3 md:ml-5">
+            <p class="c-f2 text-[var(--n5)] w-[70vw] max-md:text-[2vw] md:text-[1.4vw]">Gratis Ongkir s/d Rp40.000 dengan min. belanja Rp0; Gratis Ongkir s/d Rp300.000 dengan min. belanja Rp100.000</p>
             <p class="c-f2 text-[var(--t8)] text-[1vw]">Pelajari lebih lanjut</p>
         </div>
     </div>
 
-    <div class="p-2 w-screen fixed bottom-[0] bg-[var(--black)] flex justify-end items-center">
+    <div class="c-f1 p-2 w-screen fixed bottom-[0] bg-[var(--black)] flex justify-end items-center">
         <p class="text-xl text-white mr-[4vw]">Total (0 Produk): <b>Rp0</b></p>
-        <button class="py-1 px-8 bg-[var(--p1)] rounded-md">Beli</button>
+        <a href="checkout.html"><button class="text-xl font-bold hover:drop-shadow-md shadow-cyan-500/50 py-1 px-8 bg-[var(--p1)] rounded-md">Beli</button></a>
     </div>
     <!-- Keranjang -->
 </body>
@@ -190,6 +190,24 @@
         let nodeSilang = document.getElementById("silang");
 
         nodeSilang.setAttribute("class", "c-f1 h-screen max-sm:w-[55vw] max-md:w-[40vw] bg-[var(--p4)] absolute z-40 resize-x overflow-auto")
+    }
+
+    const Kurang = () => {
+        let nodeJumlah = document.getElementById("jumlah");
+
+        nodeJumlah.innerHTML = +(nodeJumlah.innerHTML) - 1;
+    }
+   
+    const Tambah = () => {
+        let nodeJumlah = document.getElementById("jumlah");
+
+        nodeJumlah.innerHTML = +(nodeJumlah.innerHTML) + 1;
+    }
+
+    const Hapus = () => {
+        let nodeItem1 = document.getElementById("item1");
+
+        nodeItem1.setAttribute("class", "grid grid-cols-7 h-[12vw] bg-white hidden");
     }
 </script>
 </html>
