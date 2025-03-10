@@ -11,10 +11,10 @@
     <!-- Import VI -->
     <link rel="stylesheet" href="css/vi.css" />
   </head>
-  <body class="lg:flex c-f1 lg:relative">
+  <body class="lg:flex c-f1 lg:relative bg-[var(--s2)]">
     <!-- DAFTAR -->
     <section
-      class="bg-[var(--s2)] w-[100%] h-[100vh] lg:w-[40vw] absolute"
+      class="hidden lg:block bg-[var(--s2)] w-full h-[100vh] lg:w-[40vw] absolute"
       id="daftar"
     >
       <div class="w-full px-[20%] text-[4vw] lg:text-[1.3vw]">
@@ -38,7 +38,7 @@
         </div>
 
         <div class="mb-4">
-          <p>Kata Sandi Arunika</p>
+          <p>Buat Kata Sandi Arunika-mu</p>
           <div class="flex items-center">
             <input
               type="password"
@@ -126,13 +126,20 @@
     </section>
 
     <section
-      class="lg:bg-[#D9D9D9] lg:w-[60vw] lg:h-[100vh] lg:z-20 lg:absolute"
+      class="lg:w-[60vw] lg:h-[100vh] lg:z-20 lg:absolute"
       id="slide"
-    ></section>
+    >
+
+    <div class="h-full relative">
+      <img src="public/bg-login.jpg" alt="" class="h-full w-full">
+      <p class="absolute text-[3vw] w-[80%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">"Fashion itu nggak harus baru, yang penting tetap nyaman dan ramah lingkungan."</p>
+
+    </div>
+    </section>
 
     <!-- MASUK -->
     <section
-      class="bg-[var(--s2)] w-[100vw] lg:w-[40vw] h-[100vh] absolute lg:right-0 z-10"
+      class="bg-[var(--s2)] w-full lg:w-[40vw] h-[100vh] absolute lg:right-0 z-10"
       id="masuk"
     >
       <div class="w-full px-[20%] text-[4vw] lg:text-[1.3vw]">
@@ -214,7 +221,7 @@
         </button>
 
         <div
-          class="w-full h-full lg:mt-[30%] mt-[33%] py-2 px-3 flex items-center justify-between bg-[var(--s3)] rounded-lg drop-shadow-lg"
+          class="w-full h-full lg:mt-[30%] mt-[29%] py-2 px-3 flex items-center justify-between bg-[var(--s3)] rounded-lg drop-shadow-lg"
         >
           <button class="px-[12%] py-1.5 ml-[5%] bg-[var(--s4)] rounded-lg">
             <p>Masuk</p>
@@ -237,17 +244,17 @@
 
         nodeSlide.setAttribute(
           "class",
-          "lg:bg-[#D9D9D9] lg:w-[60vw] lg:h-[100vh] lg:z-20 lg:absolute lg:translate-x-[40vw] lg:duration-700"
+          "lg:w-[60vw] lg:h-[100vh] lg:z-20 lg:absolute lg:translate-x-[40vw] lg:duration-700"
         );
 
         nodeMasuk.setAttribute(
           "class",
-          "bg-[var(--s2)] w-[100vw] lg:w-[40vw] h-[100vh] absolute lg:right-0"
+          "hidden lg:block bg-[var(--s2)] w-full lg:w-[40vw] h-[100vh] absolute lg:right-0"
         );
 
         nodeDaftar.setAttribute(
           "class",
-          "bg-[var(--s2)] w-[100%] h-[100vh] lg:w-[40vw] absolute z-10"
+          "bg-[var(--s2)] w-full h-[100vh] lg:w-[40vw] absolute z-10"
         );
       };
 
@@ -258,17 +265,17 @@
 
         nodeSlide.setAttribute(
           "class",
-          "lg:bg-[#D9D9D9] lg:w-[60vw] lg:h-[100vh] lg:z-20 lg:absolute lg:duration-700"
+          "lg:w-[60vw] lg:h-[100vh] lg:z-20 lg:absolute lg:duration-700"
         );
 
         nodeMasuk.setAttribute(
           "class",
-          "bg-[var(--s2)] w-[100vw] lg:w-[40vw] h-[100vh] absolute lg:right-0 z-10 "
+          "bg-[var(--s2)] w-full lg:w-[40vw] h-[100vh] absolute lg:right-0 z-10 "
         );
 
         nodeDaftar.setAttribute(
           "class",
-          "bg-[var(--s2)] w-[100%] h-[100vh] lg:w-[40vw] absolute"
+          "hidden lg:block bg-[var(--s2)] w-full h-[100vh] lg:w-[40vw] absolute"
         );
       };
     </script>
