@@ -19,7 +19,7 @@
 
 <body class="m-0 p-0 relative">
     <!-- Pop Hamburger Menu -->
-    <div class="c-f1 hidden h-screen max-sm:w-[55vw] max-md:w-[40vw] bg-[var(--p4)] absolute z-40 resize-x overflow-auto" id="silang" onclick="Tutup()">
+    <div class="fixed drop-shadow-md c-f1 hidden h-screen max-sm:w-[55vw] max-md:w-[40vw] bg-[var(--p4)] absolute z-40 resize-x overflow-auto" id="silang" onclick="Tutup()">
         <div class="flex justify-end">
             <img src="public/tutup.png" class="cursor-pointer mt-2 mr-2 w-[25px]">
         </div>
@@ -45,7 +45,7 @@
     <!-- Pop Hamburger Menu -->
 
     <!-- Header -->
-    <header class="c-f1 px-3 grid max-md:grid-cols-2 md:grid-cols-3 bg-[var(--p1)]">
+    <header class="fixed drop-shadow-md c-f1 px-3 w-screen z-40 grid max-md:grid-cols-2 md:grid-cols-3 bg-[var(--p1)]">
         <div class="max-md:hidden flex md:z-20">
             <a class="px-3 text-xl mx-3 h-full hover:bg-[var(--s1)] bg-[var(--s1)] grid place-content-center" href="index.html">
                 Beranda
@@ -83,35 +83,118 @@
 
     <!-- Isi -->
     <div class="bg-[var(--s2)] overflow-x-hide">
-        <div class="max-md:h-[70vh] max-md:h-[65vh]  lg:h-[44vh] pt-[10vh] flex flex-col justify-center">
-            <h1 class="c-f-judul text-8xl text-center">Arunika</h1>
-            <div class="max-md:w-[70vw] max-md:mx-[15vw] max-lg:w-[50vw] max-lg:mx-[25vw] lg:w-[40vw] lg:mx-[30vw]">
-                <p class="c-f1 text-2xl text-center">“Setiap pakaian punya cerita. Pilihlah cerita yang ramah lingkungan"</p>
+        <div class="">
+            <div class="fixed max-md:h-[70vh] max-md:h-[65vh] lg:h-[44vh] max-lg:pt-[20vh] lg:pt-[20vh] flex flex-col justify-center">
+                <h1 class="c-f-judul max-lg:text-8xl lg:text-[10vw] text-center">Arunika</h1>
+                <div class="max-md:w-[70vw] max-md:mx-[15vw] max-lg:w-[50vw] max-lg:mx-[25vw] lg:w-[40vw] lg:mx-[30vw]">
+                    <p class="c-f1 text-2xl text-center">“Setiap pakaian punya cerita. Pilihlah cerita yang ramah lingkungan"</p>
+                </div>
+            </div>
+            <div class="relative z-10 pb-1">
+                <img src="public/transisi-header edukasi-2.png" class="max-lg:pt-[70vh] lg:pt-[60vh] w-screen pb-10">
             </div>
         </div>
-        <img src="public/bg-beranda.png" class="w-screen">
-        <div class="-mt-[10%] bg-[var(--t11)] relative overflow-hidden">
+        <div class="z-20 max-sm:-mt-[20%] max-md:-mt-[16%] max-lg:-mt-[14%] lg:-mt-[10%] bg-[var(--t11)] relative overflow-hidden">
             <div class="flex items-center">
                 <img src="public/beranda-1.png" class="my-3 w-[30vw] h-[30vw]">
                 <h1 class="ml-[3vw] max-sm:text-lg max-md:text-xl max-lg:text-3xl lg:text-5xl font-bold max-md:w-[55vw] max-lg:w-[40vw] lg:w-[40vw]">Ubah Pakaian Tak Terpakai Jadi Berarti</h1>
             </div>
+            
             <img src="public/beranda-d1.png" class="absolute top-[0] right-[-3vw] w-[14%] ">
             
             <div class="c-f1 mt-10 flex items-center flex-col justify-center max-md:text-xl max-lg:text-2xl lg:text-3xl relative">
-                <img src="public/beranda-d2.png" class="absolute top-[30%] right-[2vw] max-sm:w-[13vw] sm:w-[16vw]">
-                <img src="public/beranda-d3.png" class="absolute top-[30%] left-[2vw] max-sm:w-[13vw] sm:w-[16vw]">
+                <img src="public/beranda-d2.png" class="absolute top-[30%] right-[2vw] max-sm:w-[12vw] sm:w-[16vw]">
+                <img src="public/beranda-d3.png" class="absolute top-[30%] left-[2vw] max-sm:w-[10vw] sm:w-[16vw]">
                 <p class="max-sm:w-[80vw] max-md:w-[55vw] md:w-[50vw] text-center z-10">Banyak pakaian menumpuk <b class="max-md:text-2xl max-lg:text-3xl lg:text-4xl">tanpa terpakai</b>, sementara banyak orang membutuhkannya</p>
                 <p class="mt-10 max-sm:w-[80vw] max-md:w-[55vw] md:w-[50vw] text-center z-10">Di <b class="max-md:text-2xl max-lg:text-3xl lg:text-4xl">Arunika</b>, kamu bisa mendonasikan pakaian lama dan mendapatkan koin untuk belanja pakaian. Lebih hemat, lebih peduli, lebih ramah lingkungan.</p>
             </div>
+           
             <div class="c-f1 text-xl mt-10 text-white flex justify-center items-center">
                 <button class="mr-[10vw] py-2 px-[5vw] rounded-md bg-[var(--p8)]">Belanja</button>
                 <button class="py-2 px-[5vw] rounded-md bg-[var(--p8)]">Donasi</button>
             </div>
-            <h1 class="text-center pb-[10vh] pt-[15vh] c-f1 text-5xl font-bold">Mengapa Arunika?</h1>
-            <div>
-                <div class="flex items-center">
-                    <h1 class="text-9xl">K</h1>
-                    <p>Kurangi Limbah Tekstil – Setiap pakaian yang didaur ulang berarti mengurangi sampah dan polusi.</p>
+            
+            <h1 class="text-center pb-[5vh] max-md:pt-[10vh] max-lg:pt-[30vh] lg:pt-[40vh] c-f1 max-md:text-[8vw] md:text-[5vw] font-bold">Mengapa Arunika?</h1>
+            
+            <div class="c-f1 w-screen flex-col justify-center items-center">
+                <div class="flex items-center justify-center">
+                    <h1 class="c-f3 font-bold text-[var(--p7)] max-md:text-[30vw] md:text-[15vw] leading-none">K</h1>
+                    <p class="w-[40vw] pl-5 max-md:text-[3.7vw] md:text-[2.5vw]">Kurangi Limbah Tekstil – Setiap pakaian yang didaur ulang berarti mengurangi sampah dan polusi.</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <h1 class="c-f3 font-bold text-[var(--p8)] max-md:text-[30vw] md:text-[15vw] leading-none">B</h1>
+                    <p class="w-[40vw] pl-5 max-md:text-[3.7vw] md:text-[2.5vw]">Bantu Sesama – Donasimu bisa menjadi berkah bagi orang yang membutuhkan.</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <h1 class="c-f3 font-bold text-[var(--dark)] max-md:text-[30vw] md:text-[15vw] leading-none">R</h1>
+                    <p class="w-[40vw] pl-5 max-md:text-[3.7vw] md:text-[2.5vw]">Raih Reward - Dapatkan koin dan belanja hemat di Arunika</p>
+                </div>
+            </div>
+            
+            <img src="public/bg-beranda-2.png">
+           
+            <div class="bg-[var(--p4)]">
+                <div class="max-md:pt-[10vh] relative flex justify-center items-center">
+                    <div class="relative ">
+                        <img src="public/beranda-d4.png" class="w-[50vw]">
+                        <div class="c-f1 absolute max-md:top-[-10vh] max-md:top-[0] md:top-[5vh] right-[-15vw]">
+                            <p class="pl-[2vw] w-[25vw] max-md:text-[3vw] max-lg:text-[2.4vw] lg:text-[1.9vw]">85% lebih sedikit limbah tekstil dibandingkan dengan membeli pakaian baru.</p>
+                            <img src="public/beranda-garis1.png" class="w-[20vw]">
+                        </div>
+                        <div class="c-f1 absolute max-md:top-[30%] md:top-[50%] left-[-13vw]">
+                            <p class="max-lg:-mb-[2vw] lg:-mb-[3vw] -ml-[3vw] text-right w-[20vw] max-lg:text-[2.3vw] lg:text-[1.9vw] max-md:text-[3vw]">Menghemat ribuan liter air yang digunakan dalam produksi pakaian baru.</p>
+                            <img src="public/beranda-garis2.png" class="w-[20vw]">
+                        </div>
+                        <div class="c-f1 absolute top-[70%] right-[-13vw]">
+                            <div class="relative">
+                                <p class=" absolute bottom-[0] right-[-30%] lg:-right-[38%] w-[20vw] max-lg:text-[2.4vw] lg:w-[22vw] lg:text-[1.8vw] max-md:text-[3vw]">Menghemat ribuan liter air yang digunakan dalam produksi pakaian baru.</p>
+                                <img src="public/beranda-garis3.png" class="w-[20vw]">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="public/beranda-d5.png" class="absolute w-[40vw]">
+                </div>
+
+                <h1 class="text-center c-f1 font-bold text-[5vw]">Cerita Mereka</h1>
+                
+                <div class="flex items-center justify-center flex-col">
+                    <div class="max-md:w-[90vw] md:w-[70vw] mb-6 flex items-center justify-center">
+                        <img src="public/beranda-bc1.png" class="max-md:w-[70vw] md:w-[50vw]">
+                    </div>
+                    <div class="mb-6 flex max-md:w-[90vw] md:w-[70vw] flex items-center justify-center ">
+                        <div class="flex items-center justify-center">
+                            <img src="public/beranda-d6.png" class="w-[10vw] h-[10vw]">
+                        </div>
+                        <img src="public/beranda-bc2.png" class="max-md:w-[70vw] md:w-[50vw]">
+                    </div>
+                    <div class="max-md:w-[90vw] md:w-[70vw] mb-6 flex justify-center">
+                        <div class="flex justify-center items-center">
+                            <img src="public/beranda-bc3.png" class="md:h-[11vw] max-md:w-[70vw] md:w-[50vw]">
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="public/beranda-d7.png" class="w-[10vw] h-[15vw]">
+                        </div>
+                    </div>
+                    <div class="w-[90vw] mb-6 flex justify-center">
+                        <img src="public/beranda-bc4.png" class="max-md:w-[70vw] md:w-[50vw]">
+                    </div>
+                </div>
+
+                <h1 class="text-left ml-[5vw] c-f1 font-bold text-[15vw]">Jadi, ...</h1>
+
+                <div class="flex flex-col justify-center items-center c-f1 text-[4vw]">
+                    <p>Jangan biarkan pakaianmu terbuang sia-sia!</p>
+                    <p>Donasikan & Belanja Thrift Sekarang!</p>
+                </div>
+
+                <div class="c-f1 text-xl mt-10 text-white flex justify-center items-center">
+                    <button class="mr-[10vw] py-2 px-[10vw] rounded-md bg-[var(--p8)]">Belanja</button>
+                    <button class="py-2 px-[10vw] rounded-md bg-[var(--p8)]">Donasi</button>
+                </div>
+
+                <div class="flex flex-col justify-center items-center pt-[20vw]">
+                    <img src="public/kbr.png" class="w-[50vw]">
+                    <p class="max-lg:text-[3vw] lg:text-[4vw] font-semibold c-f1 -mt-10 text-center">Kurangi, Bantu, dan Raih<br>dengan Arunika</p>
                 </div>
             </div>
         </div>
@@ -119,7 +202,7 @@
     <!-- Isi -->
     
     <!-- Footer -->
-    <footer class="text-white h-[39vh] overflow-hide">
+    <footer class="relative  bg-[var(--p4)] text-white h-[39vh] overflow-hide">
         <div class="bg-[url(public/Footer.png)] bg-center bg-no-repeat bg-cover text-center h-auto pt-[13%]">
             <div class="max-lg:pt-[43vh] grid max-lg:grid-cols-1 lg:grid-cols-4 place-content-center">
                 <div class="max-md:pl-0 max-lg:pl-3 max-lg:mb-6 lg:pl-4 place-content-center text-center">
