@@ -89,14 +89,13 @@
     <!-- Header -->
 
     <!-- Content -->
-    <div class="w-screen h-[6vh] bg-[var(--black)] flex items-center overflow-x-hidden">
-        <img src="public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 w-[2%]">
+    <div class="w-screen py-1 bg-[var(--black)] flex items-center overflow-x-hidden">
+        <img src="public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 max-md:w-[5%] md:w-[2%]">
         <div class="pb-1 relative grid place-content-center">
-            <input type="text" class="c-f2 w-[35vw] bg-[var(--black)] outline-[0] text-white"
+            <input type="text" class="c-f1 outline-none max-md:w-[50vw] md:w-[35vw] bg-[var(--black)] outline-[0] text-white"
                 placeholder="Cari Barang di Keranjang Anda">
-            <div class="w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"></div>
+            <div class="max-md:w-[50vw] md:w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"></div>
         </div>
-
     </div>
 
     <!-- Judul -->
@@ -128,21 +127,21 @@
     <div class="h-[1.5vw]"></div>
     <div class="grid grid-cols-7  bg-white" id="item1">
         <div class="flex w-[45vw] col-span-2">
-            <input class="w-[14%] h-[14%] mt-3" type="checkbox" name="" id="">
+            <input class="ml-2 w-[10%] h-[10%] mt-3" type="checkbox" name="" id="">
             <div class="flex items-center ">
-                <div class="max-sm:mx-0 max-sm:ml-1 mx-6 w-[15vw] h-[15vw] bg-black"></div>
+                <div class="max-sm:mx-0 max-sm:ml-1 mx-6 w-[17vw] h-[20vw] bg-black"></div>
             </div>
         </div>
-        <div class="col-span-2 w-[90%] py-4 ml-[-2vw]">
+        <div class="col-span-2 w-[90%] py-4 ml-[-1vw]">
             <div>
                 <p class="c-f2 max-sm:text-[2.5vw] max-md:text-[2vw] max-lg:text-[1.6vw] max-md:w-[80%] md:w-[90%] line-clamp">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece Camouflage
                     Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
             </div>
             <div class="flex">
                 <p
-                    class="c-f1 font-bold mr-2 mt-3 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-[1.1vw]">
+                    class="c-f1 flex items-center font-bold mr-2 mt-3 mb-1 p-1 max-md:px-1 md:px-2 rounded-md  bg-[var(--black)] text-[var(--white)] max-md:text-[2vw] md:text-[1.1vw]">
                     Gratis Ongkir</p>
-                <p class="c-f1 font-bold mr-2 mt-3 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-[1.1vw]">Terjamin</p>
+                <p class="c-f1 flex items-center font-bold mt-3 mb-1 max-md:px-1 md:p-1 px-2 rounded-md bg-[var(--p1)] max-md:text-[2vw] md:text-[1.1vw]">Terjamin</p>
             </div>
         </div>
         <div class="grid place-content-center">
@@ -165,17 +164,17 @@
     </div>
 
     <div class="h-[0.8vw]"></div>
-    <div class="h-[6vw] bg-white flex items-center">
-        <img class="max-md:w-[10vw] max-md:h-[10vw] md:w-[4vw] md:h-[4vw] max-md:ml-5 md:m-5" src="public/icon-truck.png" alt="" >
-        <div class="max-md:ml-3 md:ml-5">
+    <div class="h-[8vw] bg-white flex items-center" id="gratisOngkir">
+        <img class="max-md:w-[5vw] max-md:h-[5vw] md:w-[4vw] md:h-[4vw] max-md:ml-5 md:m-5" src="public/icon-truck.png" alt="" >
+        <div class="max-md:m-3 md:ml-5">
             <p class="c-f2 text-[var(--n5)] w-[70vw] max-md:text-[2vw] md:text-[1.4vw]">Gratis Ongkir s/d Rp40.000 dengan min. belanja Rp0; Gratis Ongkir s/d Rp300.000 dengan min. belanja Rp100.000</p>
             <p class="c-f2 text-[var(--t8)] text-[1vw]">Pelajari lebih lanjut</p>
         </div>
     </div>
 
     <div class="c-f1 p-2 w-screen fixed bottom-[0] bg-[var(--black)] flex justify-end items-center">
-        <p class="text-xl text-white mr-[4vw]">Total (0 Produk): <b>Rp0</b></p>
-        <a href="checkout.html"><button class="text-xl font-bold hover:drop-shadow-md shadow-cyan-500/50 py-1 px-8 bg-[var(--p1)] rounded-md">Beli</button></a>
+        <p class="text-xl text-white mr-[4vw]">Total (0 Produk): <b id="harga">Rp40.000</b></p>
+        <a href="checkout.html"><button class="max-md:text-[4vw] md:text-xl font-bold hover:drop-shadow-md shadow-cyan-500/50 py-1 px-8 bg-[var(--p1)] rounded-md">Beli</button></a>
     </div>
     <!-- Keranjang -->
 </body>
@@ -206,8 +205,10 @@
 
     const Hapus = () => {
         let nodeItem1 = document.getElementById("item1");
+        let nodegratisOngkir = document.getElementById("gratisOngkir")
 
         nodeItem1.setAttribute("class", "grid grid-cols-7 h-[12vw] bg-white hidden");
+        nodegratisOngkir.setAttribute("class", "hidden")
     }
 </script>
 </html>

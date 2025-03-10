@@ -89,96 +89,91 @@
     <!-- Header -->
 
     <!-- Content -->
-    <div class="w-screen h-[6vh] bg-[var(--black)] flex items-center overflow-x-hidden">
-        <img src="public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 w-[2%]">
+    <div class="w-screen pt-[9vh] py-1 bg-[var(--black)] flex items-center overflow-x-hidden">
+        <img src="public/icon-search.png" alt="Icon Search" class="ml-3 mr-2 max-md:w-[5%] md:w-[2%]">
         <div class="pb-1 relative grid place-content-center">
-            <input type="text" class="c-f2 w-[35vw] bg-[var(--black)] outline-[0] text-white"
+            <input type="text" class="c-f1 outline-none max-md:w-[50vw] md:w-[35vw] bg-[var(--black)] outline-[0] text-white"
                 placeholder="Cari Barang di Keranjang Anda">
-            <div class="w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"></div>
+            <div class="max-md:w-[50vw] md:w-[35vw] h-[1px] absolute bottom-[10%] bg-[var(--white)]"></div>
         </div>
     </div>
 
     <!-- Judul -->
-    <div class="flex my-2 ml-4">
-        <img class="w-[4vw] h-[4vw]" src="public/merah_cart.png" alt="keranjang">
-        <h1 class="c-f1 text-[3vw] grid place-content-center font-bold">Pembayaran</h1>
+    <div class="flex mt-2 mb-2 ml-4">
+        <img class="max-md:w-[6vw] max-md:h-[6vw] md:w-[4vw] md:h-[4vw]" src="public/merah_cart.png" alt="keranjang">
+        <h1 class="c-f1 max-md:text-[3.7vw] md:text-[3vw] grid place-content-center font-bold">Pembayaran</h1>
     </div>
     <!-- Judul -->
+
     <!-- Alamat -->
-    <div class="flex bg-[var(--p1)]">
-        <div class="w-[4vw]">
-            <img class="mx-3 mt-1 w-[2.5vw] h-[2.5vw]" src="public/icon-location.png" alt="lokasi">
+    <div class="c-f1 py-2 bg-[var(--p1)]">
+        <div class="flex justify-start items-center">
+            <img class="ml-3 max-md:w-[3vw] max-md:h-[3vw] md:w-[2.5vw] md:h-[2.5vw]" src="public/icon-location.png" alt="lokasi">
+            <p class="c-f1 font-semibold max-md:text-[3vw] md:text-[2vw]">Alamat Saya</p>
+            <img class="max-md:w-[2vw] max-md:h-[2vw] md:w-[1.2vw] md:h-[1.4vw] max-md:ml-1 md:mx-3" src="public/icon-edit.png" alt="edit">
         </div>
-        <div class="c-f1">
-            <div class="flex items-center">
-                <p class="text-[2.0vw] h-[2.5vw]">Alamat Saya</p>
-                <img class="w-[1.2vw] h-[1.4vw] mx-3" src="public/icon-edit.png" alt="edit">
+        <div class="c-f1 max-md:ml-2 md:ml-3 max-md:text-[2vw] md:text-[1.5vw]">
+            <div class="flex items-center ml-3">
+                <p class="font-semibold">Ricky Cahyadi</p>
+                <div class="w-[1px] h-[10px] max-md:mx-2 md:mx-3 bg-black "></div>
+                <p class="font-semibold">0839 - 0909 - 9087</p>
             </div>
-            <div>
-                <div class="flex items-center ">
-                    <p class="text-[1.5vw] font-semibold">Ricky Cahyadi</p>
-                    <div class="w-[2px] h-[25px] mx-3 bg-black "></div>
-                    <p class="text-[1.5vw] font-semibold">0839 - 0909 - 9087</p>
-                </div>
-                <p class="mt-[-0.5vw]">Jl. Raya Kalirungkut No.98, Kali Rungkut, Kec. Rungkut, Surabaya, Jawa Timur
-                    60293</p>
-            </div>
+            <p class="mx-3">Jl. Raya Kalirungkut No.98, Kali Rungkut, Kec. Rungkut, Surabaya, Jawa Timur 60293</p>
         </div>
     </div>
     <!-- Alamat -->
+
     <!-- chekout -->
     <div class="h-[1vw]"></div>
-    <div>
-        <div class="grid grid-cols-6 h-[12vw] bg-white">
-            <div class="flex items-center justify-center col-span-2">
-                <div class="mx-6 w-[110px] h-[110px] ml-[-2vw] bg-black"></div>
+    
+    <div class="grid grid-cols-6 p-2 bg-white">
+        <div class="col-span-2">
+            <div class="w-[15vw] h-[15vw] bg-black"></div>
+        </div>
+        <div class="col-span-2 w-[90%] ml-[-8vw]">
+            <div>
+                <p class="c-f2 max-md:text-[2vw] md:text-[1.7vw] w-[100%] line-clamp">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece
+                    Camouflage
+                    Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
             </div>
-            <div class="col-span-2 w-[90%] py-4 ml-[-8vw]">
-                <div>
-                    <p class="c-f2 text-[1.4vw] w-[80%] line-clamp">OUZO Men&Women 3MM Neoprene Wetsuit Two-piece
-                        Camouflage
-                        Spearfishing Suit Wetsuits Scuba Suit Diving Suit Snorkeling Suit</p>
+            <div class="flex max-md:text-[1.7vw] md:text-[1.1vw]">
+                <p
+                    class="c-f1 font-bold mr-1 my-1 py-1 px-2 rounded-md bg-[var(--black)] text-[var(--white)] ">
+                    Gratis Ongkir</p>
+                <p class="c-f1 font-bold mr-1 my-1 py-1 px-2 rounded-md  bg-[var(--p1)] ">Terjamin
+                </p>
+            </div>
+        </div>
+        <div class="grid place-content-center">
+            <div class="flex items-center">
+                <div class="max-md:w-[3.4vw] max-md:h-[3.4vw] md:w-[1.8vw] md:h-[1.8vw] bg-black rounded-[50%] flex items-center justify-center">
+                    <img class="w-[80%]" src="public/Kurang.png" alt="">
                 </div>
-                <div class="flex">
-                    <p
-                        class="c-f1 font-bold mr-2 mt-3 mb-1 p-1 px-2 rounded-md  bg-[var(--black)] text-[var(--white)] text-[1.1vw]">
-                        Gratis Ongkir</p>
-                    <p class="c-f1 font-bold mr-2 mt-3 mb-1 p-1 px-2 rounded-md  bg-[var(--p1)] text-[1.1vw]">Terjamin
-                    </p>
+                <p class="mx-4 c-f1 text-[4vw]">1</p>
+                <div class="max-md:w-[3.4vw] max-md:h-[3.4vw] bg-[var(--n5)] rounded-[50%] flex items-center justify-center">
+                    <img class="w-[80%]" src="public/Tambah.png" alt="">
                 </div>
             </div>
-            <div class="grid place-content-center">
-                <div class="flex items-center">
-                    <div class="w-[1.8vw] h-[1.8vw] bg-black rounded-[50%] flex items-center justify-center">
-                        <img class="w-[80%]" src="public/Kurang.png" alt="">
-                    </div>
-                    <p class="mx-4 c-f1 text-[3vw]">1</p>
-                    <div class="w-[1.8vw] h-[1.8vw] bg-[var(--n5)] rounded-[50%] flex items-center justify-center">
-                        <img class="w-[80%]" src="public/Tambah.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="grid place-content-center">
-                <h1 class="c-f1 text-[2.3vw] text-[var(--t8)] grid place-content-center">Rp40.000</h1>
-            </div>
+        </div>
+        <div class="grid place-content-center">
+            <h1 class="c-f1 max-md:text-[3vw] md:text-[2.3vw] text-[var(--t8)] grid place-content-center">Rp40.000</h1>
         </div>
     </div>
 
     <div class="h-[3px]"></div>
-    <div class="grid grid-cols-5 c-f1 h-[4vw] bg-white">
-        <div class="col-start-4 col-span-2 h-[4vw] flex items-center">
-            <img class="h-[40%]" src="public/icon-coupon.png" alt="">
-            <p class="mx-3 text-[2vw] w-[35%]">Kupon: </p>
-            <div class="w-[30%]">
-                <div class="relative w-[9.7vw] h-[2.7vw]">
-                    <h5 class="c-f1 m-0 py-0 px-2 font-bold text-[1.8vw] bg-[var(--t2)] rounded-xs relative z-[2]">
-                        Diskon 70%
-                    </h5>
-                    <img src="public/thunder.png" class="w-[14%] left-[-0.8vw] top-[-7px] z-[10] absolute">
-                </div>
+    
+    <div class="c-f1 bg-white flex justify-end items-center">
+        <img class="h-[40%]" src="public/icon-coupon.png" alt="">
+        <p class="mx-3 text-[2vw]">Kupon: </p>
+        <div class="w-[30%]">
+            <div class="relative">
+                <h5 class="c-f1 m-0 py-0 px-2 font-bold text-[1.8vw] bg-[var(--t2)] rounded-xs relative z-[2]">
+                    Diskon 70%
+                </h5>
+                <img src="public/thunder.png" class="w-[14%] left-[-0.8vw] top-[-7px] z-[10] absolute">
             </div>
-            <p class="text-[1.3vw] underline text-[var(--p8)]">Ubah Voucher</p>
         </div>
+        <p class="text-[1.3vw] underline text-[var(--p8)]">Ubah Voucher</p>
     </div>
 
     <div class="h-[3px]"></div>
