@@ -7,11 +7,15 @@
 /* Font PT Sans Narrow */
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 
+/* Import Bodoni Moda SC */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
 :root{
     /* Font */ /* F = Font*/
     --f-judul: "The Nautigal";      
     --f1: "Markazi Text";
     --f2: "PT Sans Narrow";
+    --f3: "Bodoni Moda SC";
     /* Font */
 
     /* Background Color */ /* p = primary */ /* s = secondary */ /* t = tersier */
@@ -55,4 +59,8 @@
 
 .c-f2{
     font-family: var(--f2);
+}
+
+.c-f3{
+    font-family: var(--f3);
 }
